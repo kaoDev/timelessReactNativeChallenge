@@ -1,0 +1,253 @@
+{
+    "data": {
+      "id": "d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2",
+      "label": "Michael Jackson Jacke (Tour worn & signed)",
+      "heroImage": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/hero-image-1638378336.png",
+      "heroImageThumbnail": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/placeholder-1638378336.png",
+      "heroColour": "#ffe9e9",
+      "type": "other",
+      "status": "open",
+      "tradingWindowStartDate": "2021-10-12T09:00:00.000Z",
+      "tradingWindowStartTime": "2021-10-12T09:00:00.000Z",
+      "tradingWindowEndTime": "2021-10-12T11:00:00.000Z",
+      "dropDate": "2022-03-03T00:00:00.000Z",
+      "assetAbout": {
+        "releaseDate": "1988-01-01T00:00:00.000Z",
+        "make": "Michael Jackson",
+        "model": "Jacke",
+        "creator": "Michael Jackson",
+        "exclusivity": "Unikat",
+        "condition": "Getragen, signiert"
+      },
+      "assetFinancialSpecs": {
+        "price": 0,
+        "actualPrice": 9995000,
+        "totalShares": 1999,
+        "pricePerShare": 5000,
+        "sharesSold": 1644,
+        "averageMarketPrice": 5000,
+        "pricePerformancePercentage": null
+      },
+      "annualHistoricalReturns": {
+        "annualReturn": 3.64,
+        "inflationRate": 2,
+        "originalSellingPrice": 7760900,
+        "timePeriod": 9
+      },
+      "priceDevelopmentData": {
+        "market": [
+          {
+            "date": "2022-03-01",
+            "value": 5000,
+            "source": "market",
+            "valueFormatted": "50,00 EUR"
+          }
+        ],
+        "trading": []
+      },
+      "maxSharesPerTransaction": 180,
+      "minSharesPerTransaction": 1,
+      "feePercentage": 4,
+      "assetHighlights": [
+        {
+          "id": "a5899ebe-3184-4916-9073-87358abd005c",
+          "title": "Vom Superstar zur unsterblichen Ikone: Michael Jackson",
+          "content": "Jede Generation hat ihre Superstars, jedes Genre seine Idole. Einige strahlen für einige Monate, andere für Jahre. \r\n\r\nUnd dann gibt es die, die unsterblich sind. Michael Jackson ist der Stern, der heller als jeder andere leuchtet. Egal, ob Musik, Tanz oder Fashion, MJ ist mit Popkultur unzertrennlich verknüpft. \r\n\r\nMan könnte auch sagen: Michael Jackson ist Pop. Egal, was er berührt hat, es wurde zu Gold - und ist auch so viel wert.",
+          "image": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/highlights/a5899ebe-3184-4916-9073-87358abd005c-164.jpeg"
+        }
+      ],
+      "assetDocuments": [
+        {
+          "id": "dba71e07-e265-4f0b-ad38-5ef9f1f22812",
+          "assetId": "d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2",
+          "title": "Verbraucherinformation",
+          "url": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/dba71e07-e265-4f0b-ad38-5ef9f1f22812-16448.pdf",
+          "createdAt": "2022-02-14T15:18:24.645Z",
+          "updatedAt": "2022-02-14T15:18:23.914Z",
+          "type": "pdf"
+        }
+      ],
+      "assetGallery": [
+        {
+          "id": "3e796bf2-20b3-4699-9a3b-d78e06c40cd9",
+          "assetId": "d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2",
+          "title": "Michael Jackson",
+          "url": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/3e796bf2-20b3-4699-9a3b-d78e06c40cd9-1644.jpeg",
+          "createdAt": "2022-02-09T16:23:00.658Z",
+          "updatedAt": "2022-02-09T16:22:59.679Z",
+          "type": "image",
+          "mediumUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/medium-3e796bf2-20b3-4699-9a3b-d78e06c40cd9-1644.jpeg",
+          "thumbnailUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/thumbnail-3e796bf2-20b3-4699-9a3b-d78e06c40cd9-1644.jpeg",
+          "placeholderUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/placeholder-3e796bf2-20b3-4699-9a3b-d78e06c40cd9-1644.jpeg"
+        },
+        {
+          "id": "8e7586cd-4f23-4efe-b1d9-44ba22d58e79",
+          "assetId": "d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2",
+          "title": "Michael Jackson",
+          "url": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/8e7586cd-4f23-4efe-b1d9-44ba22d58e79.MOV",
+          "createdAt": "2022-02-09T16:23:02.105Z",
+          "updatedAt": "2022-02-09T16:22:59.679Z",
+          "type": "video",
+          "mediumUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/medium-8e7586cd-4f23-4efe-b1d9-44ba22d58e79.jpeg",
+          "thumbnailUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/thumbnail-8e7586cd-4f23-4efe-b1d9-44ba22d58e79.jpeg",
+          "placeholderUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/placeholder-8e7586cd-4f23-4efe-b1d9-44ba22d58e79.jpeg"
+        },
+        {
+          "id": "4fe66afc-c985-47bd-8990-266cb672bae4",
+          "assetId": "d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2",
+          "title": "Michael Jackson",
+          "url": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/4fe66afc-c985-47bd-8990-266cb672bae4-1644.jpeg",
+          "createdAt": "2022-02-09T16:23:03.422Z",
+          "updatedAt": "2022-02-09T16:22:59.679Z",
+          "type": "image",
+          "mediumUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/medium-4fe66afc-c985-47bd-8990-266cb672bae4-1644.jpeg",
+          "thumbnailUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/thumbnail-4fe66afc-c985-47bd-8990-266cb672bae4-1644.jpeg",
+          "placeholderUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/placeholder-4fe66afc-c985-47bd-8990-266cb672bae4-1644.jpeg"
+        },
+        {
+          "id": "4001c8de-e28c-44e4-970a-ef4871e2d458",
+          "assetId": "d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2",
+          "title": "Michael Jackson",
+          "url": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/4001c8de-e28c-44e4-970a-ef4871e2d458-1644.jpeg",
+          "createdAt": "2022-02-09T16:23:04.028Z",
+          "updatedAt": "2022-02-09T16:22:59.679Z",
+          "type": "image",
+          "mediumUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/medium-4001c8de-e28c-44e4-970a-ef4871e2d458-1644.jpeg",
+          "thumbnailUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/thumbnail-4001c8de-e28c-44e4-970a-ef4871e2d458-1644.jpeg",
+          "placeholderUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/placeholder-4001c8de-e28c-44e4-970a-ef4871e2d458-1644.jpeg"
+        },
+        {
+          "id": "b030ad17-b728-46c3-9c66-369f21e8ffdc",
+          "assetId": "d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2",
+          "title": "Michael Jackson",
+          "url": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/b030ad17-b728-46c3-9c66-369f21e8ffdc-1644.jpeg",
+          "createdAt": "2022-02-09T16:23:04.857Z",
+          "updatedAt": "2022-02-09T16:22:59.679Z",
+          "type": "image",
+          "mediumUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/medium-b030ad17-b728-46c3-9c66-369f21e8ffdc-1644.jpeg",
+          "thumbnailUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/thumbnail-b030ad17-b728-46c3-9c66-369f21e8ffdc-1644.jpeg",
+          "placeholderUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/placeholder-b030ad17-b728-46c3-9c66-369f21e8ffdc-1644.jpeg"
+        },
+        {
+          "id": "a784da26-6afe-42f9-a98c-c78de2630806",
+          "assetId": "d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2",
+          "title": "Michael Jackson",
+          "url": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/a784da26-6afe-42f9-a98c-c78de2630806-1644.jpeg",
+          "createdAt": "2022-02-09T16:23:05.795Z",
+          "updatedAt": "2022-02-09T16:22:59.679Z",
+          "type": "image",
+          "mediumUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/medium-a784da26-6afe-42f9-a98c-c78de2630806-1644.jpeg",
+          "thumbnailUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/thumbnail-a784da26-6afe-42f9-a98c-c78de2630806-1644.jpeg",
+          "placeholderUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/placeholder-a784da26-6afe-42f9-a98c-c78de2630806-1644.jpeg"
+        },
+        {
+          "id": "7eaef9c4-5be0-42c6-927b-1d4b442bedea",
+          "assetId": "d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2",
+          "title": "Michael Jackson",
+          "url": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/7eaef9c4-5be0-42c6-927b-1d4b442bedea-1644.jpeg",
+          "createdAt": "2022-02-09T16:23:06.607Z",
+          "updatedAt": "2022-02-09T16:22:59.679Z",
+          "type": "image",
+          "mediumUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/medium-7eaef9c4-5be0-42c6-927b-1d4b442bedea-1644.jpeg",
+          "thumbnailUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/thumbnail-7eaef9c4-5be0-42c6-927b-1d4b442bedea-1644.jpeg",
+          "placeholderUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/placeholder-7eaef9c4-5be0-42c6-927b-1d4b442bedea-1644.jpeg"
+        },
+        {
+          "id": "8aa8b334-408a-474b-b272-3d24cd7bd226",
+          "assetId": "d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2",
+          "title": "Michael Jackson",
+          "url": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/8aa8b334-408a-474b-b272-3d24cd7bd226-1644.jpeg",
+          "createdAt": "2022-02-09T16:23:07.333Z",
+          "updatedAt": "2022-02-09T16:22:59.679Z",
+          "type": "image",
+          "mediumUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/medium-8aa8b334-408a-474b-b272-3d24cd7bd226-1644.jpeg",
+          "thumbnailUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/thumbnail-8aa8b334-408a-474b-b272-3d24cd7bd226-1644.jpeg",
+          "placeholderUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/placeholder-8aa8b334-408a-474b-b272-3d24cd7bd226-1644.jpeg"
+        },
+        {
+          "id": "3c465aba-2ce6-47c2-8e14-78b0baf2704c",
+          "assetId": "d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2",
+          "title": "Michael Jackson",
+          "url": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/3c465aba-2ce6-47c2-8e14-78b0baf2704c-1644.jpeg",
+          "createdAt": "2022-02-09T16:23:08.099Z",
+          "updatedAt": "2022-02-09T16:22:59.679Z",
+          "type": "image",
+          "mediumUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/medium-3c465aba-2ce6-47c2-8e14-78b0baf2704c-1644.jpeg",
+          "thumbnailUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/thumbnail-3c465aba-2ce6-47c2-8e14-78b0baf2704c-1644.jpeg",
+          "placeholderUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/placeholder-3c465aba-2ce6-47c2-8e14-78b0baf2704c-1644.jpeg"
+        },
+        {
+          "id": "0a30c466-103a-4565-9693-c1ab60df18ae",
+          "assetId": "d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2",
+          "title": "Michael Jackson",
+          "url": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/0a30c466-103a-4565-9693-c1ab60df18ae-1644.jpeg",
+          "createdAt": "2022-02-09T16:23:09.000Z",
+          "updatedAt": "2022-02-09T16:22:59.679Z",
+          "type": "image",
+          "mediumUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/medium-0a30c466-103a-4565-9693-c1ab60df18ae-1644.jpeg",
+          "thumbnailUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/thumbnail-0a30c466-103a-4565-9693-c1ab60df18ae-1644.jpeg",
+          "placeholderUrl": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/placeholder-0a30c466-103a-4565-9693-c1ab60df18ae-1644.jpeg"
+        }
+      ],
+      "assetSectionImages": [
+        {
+          "id": "bdfb92dc-2f88-466f-9af9-cddaa8e8ae2a",
+          "assetId": "d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2",
+          "title": "Michael Jackson",
+          "url": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/bdfb92dc-2f88-466f-9af9-cddaa8e8ae2a-1640.jpeg",
+          "createdAt": "2021-12-30T13:51:19.929Z",
+          "updatedAt": "2021-12-30T13:51:18.863Z",
+          "type": "image"
+        },
+        {
+          "id": "31fb785f-340d-4bde-b07e-9b78b49f1925",
+          "assetId": "d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2",
+          "title": "Michael Jackson",
+          "url": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/31fb785f-340d-4bde-b07e-9b78b49f1925-1640.jpeg",
+          "createdAt": "2021-12-30T13:51:20.258Z",
+          "updatedAt": "2021-12-30T13:51:18.863Z",
+          "type": "image"
+        },
+        {
+          "id": "5426fb5b-8f68-41af-b66a-338d3d48a640",
+          "assetId": "d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2",
+          "title": "Michael Jackson",
+          "url": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/5426fb5b-8f68-41af-b66a-338d3d48a640-1640.jpeg",
+          "createdAt": "2021-12-30T13:51:20.534Z",
+          "updatedAt": "2021-12-30T13:51:18.863Z",
+          "type": "image"
+        }
+      ],
+      "assetNews": [
+        {
+          "id": "c53fabc0-00d0-4154-9c0d-50810d5b5184",
+          "title": "Michael Jackson, King of Pop",
+          "content": "Er ist der King of Pop, der unangefochtene größte Superstar, den die Musikindustrie je hervor gebracht hat: Michael Jackson. \r\n\r\nVon Kind an für die Bühne ausgebildet, hatte Jacko einfach alles: die Tanzmoves, die Stimme, die Songs und natürlich den Stil. \r\n\r\nDen übergroßen weißen Handschuh, seinen Hut oder die rote Lederjacke aus dem Musikvideo seines Megahits “Beat it” sind genauso legendär wie Michael selbst.",
+          "image": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/news/c53fabc0-00d0-4154-9c0d-50810d5b5184-164552704.jpeg"
+        },
+        {
+          "id": "e004a308-5bc0-41da-8251-19cd4f611f11",
+          "title": "Einmal Michael Jackson berühren",
+          "content": "Michael Jackson ohne rote Lederjacke ist wie Superman ohne Umhang: einfach undenkbar. \r\n\r\nGetragen im Musikvideo zum millionenfach verkauften Song “Beat it” ist die Jacke wie ein heiliger Gral der Popgeschichte - ein heiliger Gral, der weit über 100.000 Euro wert ist und an dem du bald Anteile erwerben kannst, um ein Stück von ihm zu besitzen. \r\n\r\nEin Stück von MJ’s Jacke - das ist fast, wie MJ selbst zu berühren.",
+          "image": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/news/e004a308-5bc0-41da-8251-19cd4f611f11-164552704.jpeg"
+        }
+      ],
+      "costCenter": "36001",
+      "webLink": "https://www.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2",
+      "taxType": "vat",
+      "tradingFee": null,
+      "averageMarketPrice": 5000,
+      "pricePerformancePercentage": null,
+      "tradingHeaderImage": "https://documents.timeless.investments/assets/d6f1c9a2-1dec-4c6e-994c-0c52d1b781f2/documents/876c3555-74be-47cc-9101-613af01306a7-1646.jpeg",
+      "isDemo": false,
+      "isDirectLinkOnly": false,
+      "tradingStats": {
+        "maxPrice": null,
+        "minPrice": null,
+        "investSum": null,
+        "tradesCount": null
+      },
+      "isKycOnly": false,
+      "upsell": []
+    }
+  }
