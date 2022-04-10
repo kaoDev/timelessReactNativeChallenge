@@ -1,6 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { BasicDetails } from '../../component';
+import useFetchData from '../../hooks/useFetchData';
 
 interface IProductDetails {
   navigation: any;
@@ -8,10 +9,14 @@ interface IProductDetails {
 }
 
 const ProductDetails = ({ route }: IProductDetails) => {
-  const { itemData } = route.params;
+  const { itemId } = route.params;
+  const itemData = useFetchData(
+    `https://api.timeless.investments/assets/${itemId}`,
+  );
+
   return (
     <View>
-      <BasicDetails item={itemData} />
+      <BasicDetails itemData={itemData?.data} />
     </View>
   );
 };
