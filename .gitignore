@@ -58,3 +58,13 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+# eslint
+.eslintcache
+
+# jest
+coverage/
+
+# e2e
+artifacts/
+e2e/RecordedTest.js
