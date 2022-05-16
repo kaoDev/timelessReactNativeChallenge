@@ -3,16 +3,28 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
-    "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "android": "npx react-native run-android",
+    "ios": "npx react-native run-ios",
+    "start": "npx react-native start --reset-cache",
+    "test": "jest . --notify",
+    "format": "prettier --write . --ext .js,.jsx,.ts,.tsx,.gql,.graphql",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.gql,.graphql",
+    "lint:fix": "eslint --fix . --ext .js,.jsx,.ts,.tsx,.gql,.graphql"
   },
   "dependencies": {
+    "@apollo/client": "^3.5.10",
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/native-stack": "^6.2.5",
+    "@react-navigation/stack": "^6.0.11",
     "@shopify/restyle": "^1.4.0",
+    "graphql": "^16.3.0",
     "react": "17.0.2",
-    "react-native": "0.66.1"
+    "react-content-loader": "^6.1.0",
+    "react-native": "0.66.1",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.10.1",
+    "react-native-svg": "^12.1.1",
+    "react-native-swiper": "^1.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -20,26 +32,32 @@
     "@react-native-community/eslint-config": "^2.0.0",
     "@types/jest": "^26.0.23",
     "@types/react-native": "^0.65.0",
+    "@types/react-native-snap-carousel": "^3.8.5",
     "@types/react-test-renderer": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
     "babel-jest": "^26.6.3",
+    "babel-plugin-import-graphql": "^2.8.1",
     "eslint": "^7.14.0",
+    "eslint-config-airbnb": "19.0.2",
+    "eslint-config-airbnb-typescript": "^16.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-flowtype": "8.0.3",
+    "eslint-plugin-graphql": "^4.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-react-native": "^4.0.0",
     "jest": "^26.6.3",
+    "lint-staged": ">=10",
     "metro-react-native-babel-preset": "^0.66.2",
+    "prettier": "2.5.1",
     "react-test-renderer": "17.0.2",
-    "typescript": "^3.8.3"
+    "typescript": "^4.4.4"
   },
   "resolutions": {
     "@types/react": "^17"
-  },
-  "jest": {
-    "preset": "react-native",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
   }
 }
