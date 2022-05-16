@@ -1,0 +1,22 @@
+query GetAssets($first: Int, $status: AssetStatus) {
+  assets (pagination: {first: $first}, filter: {status: $status}) {
+    edges {
+      node {
+        id
+        label
+        heroImage
+        heroColour
+        model
+        gallery {
+          mediumUrl
+        }
+        assetDetails {
+          dataParsed {
+            key
+            value
+          }
+        }
+      }
+    }
+  }
+}
