@@ -22,6 +22,7 @@ parserOptions:
 plugins:
   - react
   - react-native
+  - graphql
   - "@typescript-eslint"
   - prettier
 settings:

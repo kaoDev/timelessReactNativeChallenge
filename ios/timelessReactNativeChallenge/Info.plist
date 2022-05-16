@@ -51,5 +51,13 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Barlow-Light.ttf</string>
+		<string>Barlow-Regular.ttf</string>
+		<string>Barlow-Bold.ttf</string>
+		<string>Barlow-Medium.ttf</string>
+		<string>Barlow-SemiBold.ttf</string>
+	</array>
 </dict>
 </plist>
