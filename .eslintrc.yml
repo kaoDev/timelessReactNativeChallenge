@@ -1,0 +1,91 @@
+env:
+  jest: true
+  "react-native/react-native": true
+root: true
+extends:
+  - "plugin:react/recommended"
+  - "@react-native-community"
+  - airbnb
+  - "airbnb/hooks"
+  - "airbnb-typescript"
+  - prettier
+  - "plugin:prettier/recommended"
+  - eslint-config-prettier
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+parser: "@typescript-eslint/parser"
+parserOptions:
+  ecmaVersion: 2020
+  sourceType: "module"
+  project: "./tsconfig.json"
+plugins:
+  - react
+  - react-native
+  - graphql
+  - "@typescript-eslint"
+  - prettier
+settings:
+  "import/resolver":
+    node:
+      extensions:
+        - ".js"
+        - ".jsx"
+        - ".ts"
+        - ".tsx"
+        - ".json"
+overrides:
+  - files:
+      - "*.ts"
+      - "*.tsx"
+    extends:
+      - "plugin:@typescript-eslint/recommended"
+      - "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    rules:
+      "@typescript-eslint/no-unsafe-assignment": "warn"
+      "@typescript-eslint/ban-ts-comment": "warn"
+      "@typescript-eslint/no-unsafe-call": "warn"
+      "@typescript-eslint/no-explicit-any": "warn"
+rules:
+  "prettier/prettier": "error"
+  "react/jsx-props-no-spreading": "off"
+  "quotes":
+    - "warn"
+    - "double"
+  "import/no-extraneous-dependencies":
+    - "error"
+    - "devDependencies": true
+  "react/jsx-filename-extension":
+    - "off"
+    - "extensions":
+        - ".js"
+        - ".jsx"
+        - ".ts"
+        - ".tsx"
+  "camelcase":
+    - "error"
+    - allow:
+        - "^UNSAFE_"
+  "no-unused-vars":
+    - "error"
+    - "varsIgnorePattern": "React"
+  "react/prop-types": "off"
+  "import/extensions":
+    - "error"
+    - "ignorePackages"
+    - "js": "never"
+      "jsx": "never"
+      "ts": "never"
+      "tsx": "never"
+  "react/no-unstable-nested-components": "warn"
+  "import/prefer-default-export": "off"
+  "import/no-cycle": "warn"
+  object-curly-spacing:
+    - "error"
+    - "always"
+  "react-native/no-unused-styles": "error"
+  "react-native/split-platform-components": "error"
+  "react-native/no-inline-styles": "error"
+  "react-native/no-color-literals": "error"
+  "react-native/no-raw-text": "error"
+  "react-native/no-single-element-style-arrays": "error"

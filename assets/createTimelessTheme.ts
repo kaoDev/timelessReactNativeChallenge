@@ -1,15 +1,16 @@
-import {createTheme} from '@shopify/restyle';
-import {Platform} from 'react-native';
-import colors from './colors';
-import {shadowVariants} from './shadows';
-import spacing from './spacing';
-import {textVariants} from './textVariants';
+import { createTheme } from "@shopify/restyle";
+import { Platform } from "react-native";
+import colors from "./colors";
+import { shadowVariants } from "./shadows";
+import spacing from "./spacing";
+import { textVariants } from "./textVariants";
+
 interface DynamicThemeProps {
   scaleFactor?: number;
-  mode?: 'light' | 'dark';
+  mode?: "light" | "dark";
 }
 
-const createTimelessTheme = ({scaleFactor = 1}: DynamicThemeProps = {}) => {
+const createTimelessTheme = ({ scaleFactor = 1 }: DynamicThemeProps = {}) => {
   return createTheme({
     colors: {
       // brand colors
@@ -23,7 +24,7 @@ const createTimelessTheme = ({scaleFactor = 1}: DynamicThemeProps = {}) => {
       inactive: colors.primary500,
       hover: colors.tlBlue400,
       textSelection:
-        Platform.OS === 'ios' ? colors.tlBlue400 : colors.tlBlue200,
+        Platform.OS === "ios" ? colors.tlBlue400 : colors.tlBlue200,
       pressed: colors.tlBlue600,
       disabled: colors.tlBlue100,
       disabledBackground: colors.disabledFillColorLight,
@@ -77,6 +78,6 @@ const createTimelessTheme = ({scaleFactor = 1}: DynamicThemeProps = {}) => {
 };
 
 export type Theme = ReturnType<typeof createTimelessTheme>;
-export type ThemeColor = keyof Theme['colors'];
-export type ThemeSpacing = keyof Theme['spacing'];
+export type ThemeColor = keyof Theme["colors"];
+export type ThemeSpacing = keyof Theme["spacing"];
 export default createTimelessTheme;
