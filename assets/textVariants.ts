@@ -26,7 +26,7 @@ export const textVariants = {
     fontSize: 36,
     lineHeight: 38,
     letterSpacing: 0,
-    color: "typography",
+    color: "black",
   },
   h2: {
     fontFamily: fontFamilies.bold,
@@ -34,7 +34,7 @@ export const textVariants = {
     fontSize: 32,
     lineHeight: 40,
     letterSpacing: 0,
-    color: "typography",
+    color: "black",
   },
   h3: {
     fontFamily: fontFamilies.bold,
@@ -42,7 +42,7 @@ export const textVariants = {
     fontSize: 28,
     lineHeight: 32,
     letterSpacing: 0,
-    color: "typography",
+    color: "black",
   },
   h4: {
     fontFamily: fontFamilies.semiBold,
@@ -50,7 +50,7 @@ export const textVariants = {
     fontSize: 24,
     lineHeight: 28,
     letterSpacing: 0,
-    color: "typography",
+    color: "black",
   },
   h5: {
     fontFamily: fontFamilies.semiBold,
@@ -58,7 +58,7 @@ export const textVariants = {
     fontSize: 20,
     lineHeight: 28,
     letterSpacing: 0,
-    color: "typography",
+    color: "black",
   },
   h6: {
     fontFamily: fontFamilies.semiBold,
@@ -66,7 +66,7 @@ export const textVariants = {
     fontSize: 18,
     lineHeight: 24,
     letterSpacing: 0.5,
-    color: "typography",
+    color: "black",
   },
   titleTopNav: {
     fontFamily: fontFamilies.semiBold,
@@ -74,7 +74,7 @@ export const textVariants = {
     fontSize: 16,
     lineHeight: 24,
     letterSpacing: 0.5,
-    color: "typography",
+    color: "black",
   },
   titleMd: {
     fontFamily: fontFamilies.medium,
@@ -82,7 +82,7 @@ export const textVariants = {
     fontSize: 16,
     lineHeight: 24,
     letterSpacing: 0.5,
-    color: "typography",
+    color: "black",
   },
   body: {
     fontFamily: fontFamilies.regular,
@@ -90,7 +90,7 @@ export const textVariants = {
     fontSize: 16,
     lineHeight: 24,
     letterSpacing: 0.5,
-    color: "typography",
+    color: "black",
   },
   label: {
     fontFamily: fontFamilies.medium,
@@ -99,7 +99,7 @@ export const textVariants = {
     lineHeight: 16,
     letterSpacing: 2,
     textTransform: "uppercase",
-    color: "typography",
+    color: "black",
   },
   captions1: {
     fontFamily: fontFamilies.regular,
@@ -107,7 +107,7 @@ export const textVariants = {
     fontSize: 14,
     lineHeight: 16,
     letterSpacing: 0.6,
-    color: "typography",
+    color: "black",
   },
   captions2: {
     fontFamily: fontFamilies.medium,
@@ -115,7 +115,7 @@ export const textVariants = {
     fontSize: 12,
     lineHeight: 16,
     letterSpacing: 0.3,
-    color: "typography",
+    color: "black",
   },
   link: {
     fontFamily: fontFamilies.medium,
@@ -123,7 +123,7 @@ export const textVariants = {
     fontSize: 16,
     lineHeight: 24,
     letterSpacing: 1.5,
-    color: "typographyLinks",
+    color: "black",
   },
   itemTitle: {
     fontFamily: fontFamilies.medium,
@@ -131,7 +131,7 @@ export const textVariants = {
     fontSize: 16,
     lineHeight: 24,
     letterSpacing: 3,
-    color: "typography",
+    color: "black",
     textTransform: "uppercase",
   },
 } as const;

@@ -5,6 +5,7 @@ import styles from "./style";
 import bell from "../../../assets/icons/bell.png";
 import share from "../../../assets/icons/share_01.png";
 import close from "../../../assets/icons/close.png";
+import testIDs from "../../res/testIDs";
 
 interface Props {
   title: string;
@@ -27,7 +28,7 @@ const Header = function Header({ title, model, modalMode = false }: Props) {
         <Image source={icon} style={styles.icon} />
       </TouchableWithoutFeedback>
     );
-  }
+  };
 
   return (
     <>
@@ -40,7 +41,12 @@ const Header = function Header({ title, model, modalMode = false }: Props) {
           </View>
         </View>
       )}
-      <Text style={styles.title} numberOfLines={1} adjustsFontSizeToFit>
+      <Text
+        testID={testIDs.assets.list.header.title.id}
+        style={styles.title}
+        numberOfLines={1}
+        adjustsFontSizeToFit
+      >
         {title}
       </Text>
       {modalMode && (

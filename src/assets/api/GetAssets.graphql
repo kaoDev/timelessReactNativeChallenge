@@ -7,6 +7,7 @@ query GetAssets($first: Int, $status: AssetStatus) {
         heroImage
         heroColour
         model
+        status
         gallery {
           mediumUrl
         }
