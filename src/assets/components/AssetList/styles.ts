@@ -11,7 +11,6 @@ interface Styles {
 const styles = StyleSheet.create<Styles>({
   loading: {
     alignItems: "center",
-    paddingTop: 130,
   },
   flatList: {
     backgroundColor: colors.white,

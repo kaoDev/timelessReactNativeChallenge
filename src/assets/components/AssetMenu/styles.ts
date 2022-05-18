@@ -1,5 +1,6 @@
 import { StyleSheet, ViewStyle } from "react-native";
 import createTimelessTheme from "../../../../assets/createTimelessTheme";
+import colors from "../../../../assets/colors";
 
 interface Styles {
   container: ViewStyle;
@@ -14,6 +15,7 @@ const styles = StyleSheet.create<Styles>({
     flexDirection: "row",
     justifyContent: "space-between",
     padding: theme.spacing.s,
+    backgroundColor: colors.white,
   },
   borderBottom: (isActive: boolean) => ({
     backgroundColor: isActive ? theme.colors.active : "transparent",

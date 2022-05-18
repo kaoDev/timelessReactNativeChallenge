@@ -11,6 +11,7 @@ import { Asset } from "../../../api/type";
 import Card from "../../../../components/Card";
 import bell from "../../../../../assets/icons/bell.png";
 import { assetStatusToName } from "../../../util/tools";
+import testIDs from "../../../../res/testIDs";
 
 interface Props {
   item: Asset;
@@ -22,32 +23,37 @@ const AssetItem = function AssetItem({
   onPressAssetItem,
 }: Props) {
   return (
-    <Card>
-      <TouchableOpacity onPress={onPressAssetItem} key={id}>
-        <>
-          <View style={styles.container(heroColour)}>
-            <View style={styles.emptyView} />
-            <ImageBackground
-              source={{ uri: heroImage }}
-              style={styles.imageBackground}
-              imageStyle={styles.imageStyle}
-            />
-            <Text style={styles.label}>{label}</Text>
-            <Text style={styles.model}>{model}</Text>
-          </View>
-          <View style={styles.header}>
-            <View style={styles.banderol}>
-              <Text style={styles.banderolText}>
-                {assetStatusToName(status)}
-              </Text>
+    <View key={id} testID={testIDs.assets.list.item.id}>
+      <Card>
+        <TouchableOpacity onPress={onPressAssetItem}>
+          <>
+            <View style={styles.container(heroColour)}>
+              <View style={styles.emptyView} />
+              <ImageBackground
+                source={{ uri: heroImage }}
+                style={styles.imageBackground}
+                imageStyle={styles.imageStyle}
+              />
+              <Text style={styles.label}>{label}</Text>
+              <Text style={styles.model}>{model}</Text>
             </View>
-            <View style={styles.bellView}>
-              <Image source={bell} style={styles.bell} />
+            <View style={styles.header}>
+              <View style={styles.banderol}>
+                <Text style={styles.banderolText}>
+                  {assetStatusToName(status)}
+                </Text>
+              </View>
+              <View style={styles.bellView}>
+                <Image
+                  source={require("../../../../../assets/icons/bell.png")}
+                  style={styles.bell}
+                />
+              </View>
             </View>
-          </View>
-        </>
-      </TouchableOpacity>
-    </Card>
+          </>
+        </TouchableOpacity>
+      </Card>
+    </View>
   );
 };
 

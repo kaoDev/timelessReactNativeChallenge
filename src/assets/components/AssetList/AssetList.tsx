@@ -22,7 +22,7 @@ const AssetList = function AssetList() {
   const dispatch = useThemeDispatch();
 
   useEffect(() => {
-    dispatch(toggleTheme(isColorSchemeDark));
+    // dispatch(toggleTheme(isColorSchemeDark));
   }, [isColorSchemeDark, dispatch]);
 
   const navigation = useNavigation<StackNavigationProp<AssetsStackParamList>>();
@@ -44,15 +44,6 @@ const AssetList = function AssetList() {
     }
   }, [data]);
 
-  if (loading === Status.Pending)
-    return (
-      <View style={styles.loading}>
-        <AssetItemContentLoader />
-        <AssetItemContentLoader />
-        <AssetItemContentLoader />
-      </View>
-    );
-
   if (error === Status.Error) {
     return <Text>{`An error has occurred: ${error.message}`}</Text>;
   }
@@ -61,27 +52,31 @@ const AssetList = function AssetList() {
     navigation.navigate(ASSET_SCREEN, { item });
   };
 
+  const renderItem = ({ item }: { item: Asset }) => (
+    <AssetItem item={item} onPressAssetItem={() => onPressAssetItem(item)} />
+  );
+
   return (
-    <FlatList
-      data={assets}
-      style={styles.flatList}
-      initialNumToRender={INITIAL_NUM_TO_RENDER}
-      refreshing={loading === Status.Pending}
-      keyExtractor={({ id }) => id.toString()}
-      renderItem={({ item }) => (
-        <AssetItem
-          item={item}
-          onPressAssetItem={() => onPressAssetItem(item)}
-        />
+    <>
+      <Header title={strings.assets.title} />
+      <AssetMenu setAssetStatus={setAssetStatus} />
+      {loading === Status.Pending && (
+        <View style={styles.loading}>
+          <AssetItemContentLoader />
+          <AssetItemContentLoader />
+          <AssetItemContentLoader />
+        </View>
       )}
-      ListHeaderComponent={() => (
-        <>
-          <Header title={strings.assets.title} />
-          <AssetMenu setAssetStatus={setAssetStatus} />
-        </>
-      )}
-      onEndReachedThreshold={0.9}
-    />
+      <FlatList
+        data={assets}
+        style={styles.flatList}
+        initialNumToRender={INITIAL_NUM_TO_RENDER}
+        refreshing={loading === Status.Pending}
+        keyExtractor={({ id }) => id.toString()}
+        renderItem={renderItem}
+        onEndReachedThreshold={0.9}
+      />
+    </>
   );
 };
 
