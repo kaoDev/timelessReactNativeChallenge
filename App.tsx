@@ -3,7 +3,7 @@ import {ThemeProvider} from '@shopify/restyle';
 
 import {UrQlProvider} from './graphql/urql';
 import createTimelessTheme from './assets/createTimelessTheme';
-import {Box} from './src/components';
+import {AppNavigation} from './src/naviagtion';
 
 export const App = (): React.JSX.Element => {
   const theme = createTimelessTheme();
@@ -11,7 +11,7 @@ export const App = (): React.JSX.Element => {
   return (
     <UrQlProvider>
       <ThemeProvider theme={theme}>
-        <Box />
+        <AppNavigation />
       </ThemeProvider>
     </UrQlProvider>
   );
