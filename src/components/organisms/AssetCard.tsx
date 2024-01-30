@@ -3,20 +3,28 @@ import {Image} from 'react-native';
 import {useTheme} from '@shopify/restyle';
 import {Theme} from '../../../assets/createTimelessTheme';
 import {Box, Text, TouchBox} from '..';
+import icons from '../../../assets/icons';
 import {Asset} from '../../../graphql/graphql';
 
 interface CardProps {
   asset: Partial<Asset>;
-  onPress: (id: string) => void;
+  onPress: () => void;
+  onSubscribePress: () => void;
+  isSubscribed: boolean;
 }
 
-export const AssetCard: FC<CardProps> = ({asset, onPress}) => {
+export const AssetCard: FC<CardProps> = ({
+  asset,
+  onPress,
+  onSubscribePress,
+  isSubscribed,
+}) => {
   const theme = useTheme<Theme>();
 
   return (
     <TouchBox
       activeOpacity={0.8}
-      onPress={() => onPress(asset.id)}
+      onPress={onPress}
       overflow="hidden"
       borderRadius="m"
       mt="s"
@@ -24,6 +32,17 @@ export const AssetCard: FC<CardProps> = ({asset, onPress}) => {
         backgroundColor: `${asset.heroColour}`,
       }}>
       <Box aspectRatio={1}>
+        <TouchBox
+          position="absolute"
+          alignSelf="flex-end"
+          p="s"
+          zIndex={1}
+          onPress={onSubscribePress}>
+          <Image
+            source={isSubscribed ? icons.bellFilled : icons.bell}
+            style={{width: theme.iconSize.m}}
+          />
+        </TouchBox>
         <Box flex={2.5} pt="m">
           <Image
             source={{uri: asset.heroImage}}
