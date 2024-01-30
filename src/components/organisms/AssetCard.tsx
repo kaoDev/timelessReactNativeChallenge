@@ -5,6 +5,7 @@ import {Theme} from '../../../assets/createTimelessTheme';
 import {Box, Text, TouchBox} from '..';
 import icons from '../../../assets/icons';
 import {Asset} from '../../../graphql/graphql';
+import FastImage from 'react-native-fast-image';
 
 interface CardProps {
   asset: Partial<Asset>;
@@ -44,10 +45,10 @@ export const AssetCard: FC<CardProps> = ({
           />
         </TouchBox>
         <Box flex={2.5} pt="m">
-          <Image
+          <FastImage
             source={{uri: asset.heroImage}}
             style={{width: '100%', height: '100%'}}
-            resizeMode="contain"
+            resizeMode={FastImage.resizeMode.contain}
           />
         </Box>
         <Box

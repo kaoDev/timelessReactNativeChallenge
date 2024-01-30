@@ -6,6 +6,7 @@ import {useTheme} from '../../assets/createTimelessTheme';
 
 import {useAsset} from '../../queries';
 import {RootStackScreenProps} from '../naviagtion';
+import FastImage from 'react-native-fast-image';
 
 export type AssetDetailScreenProps = RootStackScreenProps<'AssetDetail'>;
 
@@ -30,11 +31,12 @@ export const AssetDetailScreen: FC<AssetDetailScreenProps> = ({route}) => {
       style={{
         backgroundColor: data?.asset.heroColour || 'transparent',
       }}>
-      <Image
+      <FastImage
         style={[styles.imageCover]}
         source={{
           uri: data?.asset.heroImage,
         }}
+        resizeMode={FastImage.resizeMode.contain}
       />
       <Box
         bg="surface"
@@ -55,7 +57,6 @@ export const AssetDetailScreen: FC<AssetDetailScreenProps> = ({route}) => {
 
 const styles = StyleSheet.create({
   imageCover: {
-    resizeMode: 'contain',
     height: IMG_HEIGHT,
     width: '100%',
   },
