@@ -1,11 +1,12 @@
 import React, {FC} from 'react';
 import {FlatList, SafeAreaView} from 'react-native';
+import {Asset} from '../../graphql/graphql';
 import {AssetCard, Box, Text} from '../components';
 import {useAssetsList} from '../../queries';
 import {RootStackScreenProps} from '../naviagtion';
+
 import {ErrorBox, LoadingBox} from '../components/molecules';
 import {useTheme} from '../../assets/createTimelessTheme';
-import {Asset} from '../../graphql/graphql';
 
 export type AssetListScreenProps = RootStackScreenProps<'AssetsList'>;
 
@@ -15,7 +16,7 @@ export const AssetListScreen: FC<AssetListScreenProps> = ({navigation}) => {
   const [{fetching, data, error}] = useAssetsList();
 
   const onAssetPress = (id: string) => {
-    console.log('navigate');
+    navigation.navigate('AssetDetail', {assetId: id});
   };
 
   if (fetching) {

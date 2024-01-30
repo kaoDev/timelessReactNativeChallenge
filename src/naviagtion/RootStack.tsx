@@ -4,10 +4,11 @@ import {
   NativeStackNavigationProp,
   NativeStackScreenProps,
 } from '@react-navigation/native-stack';
-import {AssetListScreen} from '../screens';
+import {AssetListScreen, AssetDetailScreen} from '../screens';
 
 export type RootStackParamList = {
   AssetsList: undefined;
+  AssetDetail: {assetId: string};
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
@@ -25,6 +26,7 @@ export const RootStackNavigator = () => {
       screenOptions={{headerShown: false}}
       initialRouteName="AssetsList">
       <Stack.Screen name="AssetsList" component={AssetListScreen} />
+      <Stack.Screen name="AssetDetail" component={AssetDetailScreen} />
     </Stack.Navigator>
   );
 };
