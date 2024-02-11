@@ -1,4 +1,6 @@
-export const baseUnit = 4;
+import Responsive from '../src/utils/Responsive';
+
+export const baseUnit = Responsive.font(4);
 
 const spacing = {
   base: baseUnit,

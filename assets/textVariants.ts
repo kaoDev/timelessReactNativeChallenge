@@ -11,6 +11,8 @@
 900    Extra Black, Fat, Poster or Ultra Black
  */
 
+import Responsive from '../src/utils/Responsive';
+
 export const fontFamilies = {
   light: 'Barlow-Light',
   regular: 'Barlow-Regular',
@@ -20,6 +22,12 @@ export const fontFamilies = {
 } as const;
 
 export const textVariants = {
+  defaults: {
+    fontFamily: fontFamilies.regular,
+    fontSize: Responsive.font(16),
+    lineHeight: Responsive.font(24),
+    color: 'typography',
+  },
   h1: {
     fontFamily: fontFamilies.bold,
     fontWeight: '700',

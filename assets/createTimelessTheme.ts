@@ -1,16 +1,16 @@
-import {createTheme, useTheme as useRestyleTheme} from '@shopify/restyle';
-import {Platform} from 'react-native';
+import { createTheme, useTheme as useRestyleTheme } from '@shopify/restyle';
+import { Platform } from 'react-native';
 import colors from './colors';
-import {shadowVariants} from './shadows';
+import { shadowVariants } from './shadows';
 import spacing from './spacing';
-import {TextVariant, textVariants} from './textVariants';
+import { TextVariant, textVariants } from './textVariants';
 
 interface DynamicThemeProps {
   scaleFactor?: number;
   mode?: 'light' | 'dark';
 }
 
-const createTimelessTheme = ({scaleFactor = 1}: DynamicThemeProps = {}) => {
+const createTimelessTheme = ({ scaleFactor = 1 }: DynamicThemeProps = {}) => {
   return createTheme({
     colors: {
       // brand colors
@@ -81,6 +81,10 @@ const createTimelessTheme = ({scaleFactor = 1}: DynamicThemeProps = {}) => {
       skeletonBase: colors.primary100,
       skeletonHighlight: colors.skeletonHighlight,
       brightOrange: colors.orange300,
+
+      transparent: colors.transparent,
+      activityBackDrop: colors.activityBackDrop,
+      lightGray: colors.lightGray,
     },
     spacing: {
       base: spacing.base * scaleFactor,

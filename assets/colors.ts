@@ -68,6 +68,10 @@ const colors = {
   petrol: '#14768C',
 
   skeletonHighlight: '#ecebeb',
+  transparent: 'rgba(0,0,0,0)',
+  activityBackDrop: 'rgba(0, 0, 0, 0.5)',
+  lightGray: '#9e9ea7',
+
 };
 
 export default colors;
