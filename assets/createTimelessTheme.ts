@@ -85,6 +85,7 @@ const createTimelessTheme = ({ scaleFactor = 1 }: DynamicThemeProps = {}) => {
       transparent: colors.transparent,
       activityBackDrop: colors.activityBackDrop,
       lightGray: colors.lightGray,
+      grayBorder: colors.grayBorder,
     },
     spacing: {
       base: spacing.base * scaleFactor,

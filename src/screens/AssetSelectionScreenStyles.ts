@@ -10,4 +10,10 @@ export default StyleSheet.create({
     backgroundColor: theme.colors?.surface,
     alignItems: 'center',
   },
+  header: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+  },
 } as const);

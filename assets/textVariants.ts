@@ -84,9 +84,9 @@ export const textVariants = {
   // eslint-disable-next-line react-native/no-unused-styles
   titleTopNav: {
     fontFamily: fontFamilies.semiBold,
-    fontWeight: '600',
-    fontSize: 16,
-    lineHeight: 24,
+    fontWeight: '700',
+    fontSize: Responsive.font(26),
+    lineHeight: Responsive.font(24),
     letterSpacing: 0.5,
     color: 'typography',
   },

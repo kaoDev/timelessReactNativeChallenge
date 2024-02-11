@@ -71,6 +71,7 @@ const colors = {
   transparent: 'rgba(0,0,0,0)',
   activityBackDrop: 'rgba(0, 0, 0, 0.5)',
   lightGray: '#9e9ea7',
+  grayBorder: '#f1f1f6',
 
 };
 
