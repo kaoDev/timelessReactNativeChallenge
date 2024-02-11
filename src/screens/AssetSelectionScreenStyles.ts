@@ -16,4 +16,9 @@ export default StyleSheet.create({
     left: 0,
     right: 0,
   },
+  list: {
+    marginTop: theme.spacing?.xxl,
+    paddingHorizontal: theme.spacing?.m,
+    width: '100%',
+  },
 } as const);

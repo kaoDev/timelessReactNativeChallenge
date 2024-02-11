@@ -94,8 +94,8 @@ export const textVariants = {
   titleMd: {
     fontFamily: fontFamilies.medium,
     fontWeight: '500',
-    fontSize: 16,
-    lineHeight: 24,
+    fontSize: Responsive.font(16),
+    lineHeight: Responsive.font(24),
     letterSpacing: 0.5,
     color: 'typography',
   },
@@ -122,8 +122,8 @@ export const textVariants = {
   captions1: {
     fontFamily: fontFamilies.regular,
     fontWeight: '400',
-    fontSize: 14,
-    lineHeight: 16,
+    fontSize: Responsive.font(14),
+    lineHeight: Responsive.font(16),
     letterSpacing: 0.6,
     color: 'typography',
   },
