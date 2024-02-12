@@ -3,7 +3,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {RootStackParamList} from 'src/types/rootStackParams';
 import Drops from 'src/screens/drops/Drops';
 import DropsDetail from 'src/screens/dropsDetail/DropsDetail';
-
+import ButtonCircle from 'src/components/buttons/circle/Circle';
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const StackNavigator = () => {
@@ -13,7 +13,6 @@ const StackNavigator = () => {
       screenOptions={{
         headerShadowVisible: false,
         headerTitleAlign: 'center',
-        headerBackVisible: false,
       }}>
       <Stack.Group>
         <Stack.Screen
@@ -25,7 +24,18 @@ const StackNavigator = () => {
             gestureEnabled: false,
           })}
         />
-        <Stack.Screen name="DropsDetailScreen" component={DropsDetail} />
+        <Stack.Screen
+          name="DropsDetailScreen"
+          component={DropsDetail}
+          options={({navigation, route}) => {
+            return {
+              title: '',
+              headerRight: () => (
+                <ButtonCircle selected={false} onButtonPress={() => {}} />
+              ),
+            };
+          }}
+        />
       </Stack.Group>
     </Stack.Navigator>
   );

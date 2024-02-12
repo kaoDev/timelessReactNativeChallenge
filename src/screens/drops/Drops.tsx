@@ -7,7 +7,8 @@ import {useTheme} from 'assets/createTimelessTheme';
 import SafeAreaContainer from 'src/components/safeAreaContainer/SafeAreaContainer';
 
 import {RootStackParamList} from 'src/types/rootStackParams';
-
+import {Loading} from 'src/components/loading/Loading';
+import {Error} from 'src/components/error/Error';
 import {useAssetsList} from '../../../queries';
 
 const Drops = ({
@@ -27,6 +28,14 @@ const Drops = ({
     setRefreshing(false);
   }, []);
 
+  if (fetching) {
+    return <Loading />;
+  }
+
+  if (error || !paginatedAssets) {
+    return <Error error={error} />;
+  }
+
   return (
     <SafeAreaContainer edges={['top']}>
       {!fetching && (
@@ -36,7 +45,11 @@ const Drops = ({
           renderItem={({item}) => (
             <DropsCard
               dropItem={item}
-              onPress={(id: string) => {}}
+              onPress={(id: string) => {
+                navigation.navigate('DropsDetailScreen', {
+                  dropId: id,
+                });
+              }}
               onFavoritePress={() => {}}
             />
           )}

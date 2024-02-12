@@ -6,7 +6,7 @@ export type RootStackParamList = {
   WalletScreen: undefined;
 
   DropsScreen: undefined;
-  DropsDetailScreen: undefined;
+  DropsDetailScreen: {dropId: string};
 
   TradingScreen: undefined;
 

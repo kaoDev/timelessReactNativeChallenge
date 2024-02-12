@@ -16,9 +16,6 @@ export interface IButton extends TouchableOpacityProps {
 }
 
 export interface IButtonCircle extends IButton {
-  iconNameNormal: string;
-  iconNamePressed: string;
-  iconColor: string;
   selected: boolean;
 }
 

@@ -5,6 +5,7 @@ import {Text} from 'src/components/text/Text';
 import {useTheme} from 'assets/createTimelessTheme';
 import {IDropItem} from 'src/types';
 import Tag from 'src/components/tag/Tag';
+import ButtonCircle from 'src/components/buttons/circle/Circle';
 
 const styles = StyleSheet.create({
   card: {
@@ -31,6 +32,13 @@ const styles = StyleSheet.create({
     top: 20,
     left: 0,
     zIndex: 1,
+  },
+  favoriteContainer: {
+    position: 'absolute',
+    top: 20,
+    right: 10,
+    zIndex: 1,
+    alignItems: 'center',
   },
 });
 
@@ -68,6 +76,12 @@ const DropsCard = ({dropItem, onPress, onFavoritePress}: IDropCardProps) => {
         },
       ]}
       onPress={() => onPress(dropItem.id)}>
+      <Box style={styles.favoriteContainer}>
+        <ButtonCircle selected onButtonPress={() => {}} />
+        <Text variant="captions1" fontWeight={'500'}>
+          {dropItem.countLikes}
+        </Text>
+      </Box>
       <Box style={styles.tagsContainer}>
         {dropItem.status === 'coming_soon' && (
           <Tag
