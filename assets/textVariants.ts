@@ -147,6 +147,13 @@ export const textVariants = {
     color: 'typography',
     textTransform: 'uppercase',
   },
+  // eslint-disable-next-line react-native/no-unused-styles
+  tab: {
+    fontFamily: fontFamilies.regular,
+    fontSize: 10,
+    lineHeight: 24,
+    color: 'typography',
+  },
 } as const;
 
 export type TextVariant = keyof typeof textVariants;
