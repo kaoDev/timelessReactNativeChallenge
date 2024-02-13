@@ -76,8 +76,8 @@ export const textVariants = {
   h6: {
     fontFamily: fontFamilies.semiBold,
     fontWeight: '600',
-    fontSize: 18,
-    lineHeight: 24,
+    fontSize: Responsive.font(18),
+    lineHeight: Responsive.font(24),
     letterSpacing: 0.5,
     color: 'typography',
   },
@@ -131,8 +131,8 @@ export const textVariants = {
   captions2: {
     fontFamily: fontFamilies.medium,
     fontWeight: '500',
-    fontSize: 12,
-    lineHeight: 16,
+    fontSize: Responsive.font(12),
+    lineHeight: Responsive.font(16),
     letterSpacing: 0.3,
     color: 'typography',
   },

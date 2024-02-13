@@ -123,6 +123,10 @@ const createTimelessTheme = ({ scaleFactor = 1 }: DynamicThemeProps = {}) => {
       xl: 24 * scaleFactor,
       iconBgRadius: 50,
     },
+    images: {
+      emptyAssets: require('./images/emptyAssets.png'),
+      noConnection: require('./images/noConnection.png'),
+    },
   });
 };
 
