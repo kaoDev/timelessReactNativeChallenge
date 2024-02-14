@@ -6,11 +6,20 @@ const theme = useTheme<Theme>();
 
 export default StyleSheet.create({
   card: {
-    flex: 1,
     borderRadius: 12,
     marginTop: theme.spacing?.s,
     flexDirection: 'column',
     shadowOpacity: 0.1,
+  },
+  iconContainer: {
+    alignSelf: 'flex-end',
+    marginTop:theme.spacing?.xs,
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: theme.colors?.surface,
+    padding: theme.spacing?.xs,
+    marginHorizontal:theme.spacing?.xs,
+    borderRadius:theme.borderRadii?.iconBgRadius,
   },
   image: {
     height: 220,
