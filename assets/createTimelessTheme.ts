@@ -30,6 +30,7 @@ const createTimelessTheme = ({ scaleFactor = 1 }: DynamicThemeProps = {}) => {
       disabledBackground: colors.disabledFillColorLight,
       activeBackground: colors.tlBlue50,
       disabledOutline: colors.primary100,
+      disabledDarkOutline: colors.primary200,
       tableRowHighlight: colors.tlBlue50,
       activeBadge: colors.petrol,
       iconLightBackground: colors.primary50,

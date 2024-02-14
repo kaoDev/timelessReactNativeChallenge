@@ -7,7 +7,7 @@ const theme = useTheme<Theme>();
 export default StyleSheet.create({
   card: {
     borderRadius: 12,
-    marginTop: theme.spacing?.s,
+    marginBottom: theme.spacing?.s,
     flexDirection: 'column',
     shadowOpacity: 0.1,
   },

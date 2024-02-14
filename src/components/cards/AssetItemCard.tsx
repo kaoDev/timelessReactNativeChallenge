@@ -29,9 +29,10 @@ export type AssetItem = {
   type: string;
 };
 
-type AssetItemCardProps = { assetItem: AssetItem };
+type AssetItemCardProps = { assetItem: AssetItem,  subscribedIconClick?: void | (() => void);
+};
 
-const AssetItemCard: React.FC<AssetItemCardProps> = ({ assetItem }) => {
+const AssetItemCard: React.FC<AssetItemCardProps> = ({ assetItem,   subscribedIconClick = () => null, }) => {
 
   const [isSubscribed, setIsSubscribed] = useState(false);
 
@@ -52,6 +53,7 @@ const AssetItemCard: React.FC<AssetItemCardProps> = ({ assetItem }) => {
       await removeItem(`${assetItem?.type}-${assetItem?.id}`);
       setIsSubscribed(false);
     }
+    subscribedIconClick();
   }
 
   const renderTextContainer = (firstText: String, secondText: String, fontWeight: String | any, lineHeight: number = 16) => {
