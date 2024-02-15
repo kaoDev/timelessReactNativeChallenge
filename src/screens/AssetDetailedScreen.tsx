@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { SafeAreaView, Image, TouchableOpacity, ImageBackground, ScrollView } from 'react-native';
+import { SafeAreaView, Image, TouchableOpacity, ImageBackground, ScrollView, Share } from 'react-native';
 import { useAsset } from '../../queries';
 import styles from './AssetDetailedScreenStyles';
 import { ActivityIndicatorOverlay, Box, ErrorConnectionDialog } from '../components';
@@ -51,6 +51,15 @@ const AssetDetailedScreen: React.FC<AssetDetailedScreenProps> = ({ route }) => {
     );
   };
 
+  const onShare = async () => {
+    try {
+       await Share.share({
+        message: assetItem?.label});
+    } catch (error) {
+      console.error('Unable to share item error:', error);
+    }
+  };
+
   const onPressIcon = async () => {
     if (!isSubscribed) {
       await setItem(`${assetItem?.type}-${assetItem?.id}`, assetItem?.id);
@@ -78,7 +87,7 @@ const AssetDetailedScreen: React.FC<AssetDetailedScreenProps> = ({ route }) => {
         <TouchableOpacity onPress={() => onPressIcon()} style={styles.iconInnerContainer} >
           <Image style={{ width: theme.iconSize?.m, height: theme.iconSize?.m }} source={isSubscribed ? theme.icons?.heartFilled : theme.icons?.heart} />
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => null} style={styles.iconInnerContainer} >
+        <TouchableOpacity onPress={() => onShare()} style={styles.iconInnerContainer} >
           <Image style={{ width: theme.iconSize?.m, height: theme.iconSize?.m }} source={theme.icons?.share} />
         </TouchableOpacity>
       </Box>);
