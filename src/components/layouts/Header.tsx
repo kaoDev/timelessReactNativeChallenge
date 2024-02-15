@@ -25,13 +25,13 @@ export const Header: React.FC<HeaderProps> = ({ borderless = false, left, right,
   return (
     <Box style={[styles.container, style]}>
       <Box style={contentStyle()}>
-        <Box style={styles.left}>
+        <Box testID="leftContent" style={styles.left}>
           {left}
         </Box>
-        <Box style={styles.center}>
+        <Box testID="centerContent" style={styles.center}>
           {center}
         </Box>
-        <Box style={styles.right}>
+        <Box testID="rightContent" style={styles.right}>
           {right}
         </Box>
       </Box>
