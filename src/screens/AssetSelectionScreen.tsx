@@ -9,13 +9,15 @@ import { AssetItem } from '../components/cards/AssetItemCard';
 import { useTheme } from '@shopify/restyle';
 import { getItem } from '../utils/AsyncStorageUtils';
 import { Theme } from '../../assets/createTimelessTheme';
+import Routes from '../navigation/Routes';
+import { RootStackScreenProps } from '../navigation/StackNavigation';
 
 const theme = useTheme<Theme>();
 
-export type AssetSelectionScreenProps = {};
+export type AssetSelectionScreenProps = RootStackScreenProps<'AssetSelection'>;
 export type GroupedData = { [key: string]: AssetItem[] };
 
-const AssetSelectionScreen: React.FC<AssetSelectionScreenProps> = ({ }) => {
+const AssetSelectionScreen: React.FC<AssetSelectionScreenProps> = ({navigation}) => {
 
   const flatListRef: React.RefObject<FlatList> = useRef<FlatList>(null);
   const [{ fetching, data, error }] = useAssetsList();
@@ -86,7 +88,7 @@ const AssetSelectionScreen: React.FC<AssetSelectionScreenProps> = ({ }) => {
       <FlatList
         showsVerticalScrollIndicator={false}
         data={types[selectedType]}
-        renderItem={({ item }) => <AssetItemCard assetItem={item} subscribedIconClick={forceUpdate}  />}
+        renderItem={({ item }) => <AssetItemCard assetItem={item} subscribedIconClick={forceUpdate}  onClick={() => navigation.navigate(Routes.AssetDetail, {id: item?.id})}  />}
         ListEmptyComponent={renderNoAssets}
         style={styles.itemList}
         contentContainerStyle={styles.itemListContainer}

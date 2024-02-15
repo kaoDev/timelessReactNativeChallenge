@@ -11,3 +11,5 @@ export const ERROR_MODAL = {
 export const LOADING = 'Loading...' as const;
 export const DROPS = 'Drops' as const;
 export const TRY_AGAIN = 'Try Again' as const;
+export const DROP_MARKET_VALUE = 'Drop Market Value' as const;
+export const OUR_DROP_PRICE = 'Our Drop Price' as const;

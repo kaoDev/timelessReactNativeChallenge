@@ -6,6 +6,7 @@ import Responsive from '../../utils/Responsive';
 import { useTheme } from '@shopify/restyle';
 import { setItem, getItem, removeItem } from '../../utils/AsyncStorageUtils';
 import { Theme } from '../../../assets/createTimelessTheme';
+import { DROP_MARKET_VALUE, OUR_DROP_PRICE } from '../../utils/Constants';
 
 const theme = useTheme<Theme>();
 
@@ -29,10 +30,11 @@ export type AssetItem = {
   type: string;
 };
 
-type AssetItemCardProps = { assetItem: AssetItem,  subscribedIconClick?: void | (() => void);
+type AssetItemCardProps = {
+  assetItem: AssetItem, subscribedIconClick: void | (() => void); onClick: void | (() => void);
 };
 
-const AssetItemCard: React.FC<AssetItemCardProps> = ({ assetItem,   subscribedIconClick = () => null, }) => {
+const AssetItemCard: React.FC<AssetItemCardProps> = ({ assetItem, subscribedIconClick = () => null, onClick = () => null, }) => {
 
   const [isSubscribed, setIsSubscribed] = useState(false);
 
@@ -83,12 +85,12 @@ const AssetItemCard: React.FC<AssetItemCardProps> = ({ assetItem,   subscribedIc
   return (
     <TouchableOpacity
       style={[styles.card, { backgroundColor: assetItem?.heroColour, }]}
-      onPress={() => null}>
+      onPress={() => onClick()}>
       {renderIcon()}
       <Image style={styles.image} source={{ uri: assetItem?.heroImage }} />
       <Box style={[styles.content, { backgroundColor: darkenColor(assetItem?.heroColour, 20) }]}>
         <Text marginBottom={'s'} variant={'titleMd'}>{assetItem?.label}</Text>
-        {renderTextContainer('Drop Market Value', 'Our Drop Price', '300')}
+        {renderTextContainer(DROP_MARKET_VALUE, OUR_DROP_PRICE, '300')}
         {renderTextContainer(`${assetItem?.price} €`, `${assetItem?.actualPrice} €`, '500', 24)}
       </Box>
     </TouchableOpacity>

@@ -127,6 +127,8 @@ const createTimelessTheme = ({ scaleFactor = 1 }: DynamicThemeProps = {}) => {
     icons: {
       heart: require('./icons/heart.png'),
       heartFilled: require('./icons/heart_filled.png'),
+      back: require('./icons/back.png'),
+      share: require('./icons/share_01.png'),
     },
     images: {
       emptyAssets: require('./images/emptyAssets.png'),
