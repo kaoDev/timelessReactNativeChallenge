@@ -17,7 +17,7 @@ const theme = useTheme<Theme>();
 export type AssetSelectionScreenProps = RootStackScreenProps<'AssetSelection'>;
 export type GroupedData = { [key: string]: AssetItem[] };
 
-const AssetSelectionScreen: React.FC<AssetSelectionScreenProps> = ({navigation}) => {
+const AssetSelectionScreen: React.FC<AssetSelectionScreenProps> = ({ navigation }) => {
 
   const flatListRef: React.RefObject<FlatList> = useRef<FlatList>(null);
   const [{ fetching, data, error }] = useAssetsList();
@@ -30,7 +30,7 @@ const AssetSelectionScreen: React.FC<AssetSelectionScreenProps> = ({navigation})
   });
   const favouriteData: GroupedData = { ['Favourites']: favouriteItems }
   const newData: GroupedData = { ['New']: [...sortBy(assets, 'dropDate')] };
-  const types: GroupedData = Object.assign(groupBy(assets, 'type'), Object.assign(favouriteData, newData));
+  const types = assets?.length && Object.assign(groupBy(assets, 'type'), Object.assign(favouriteData, newData));
   const [showErrorModal, setShowErrorModal] = useState(false);
   const [forceUpdateFlag, setForceUpdateFlag] = useState(false);
   const [selectedType, setSelectedType] = useState<string>('New');
@@ -58,7 +58,7 @@ const AssetSelectionScreen: React.FC<AssetSelectionScreenProps> = ({navigation})
   };
 
   const renderNoAssets = () => {
-    return !assets && (
+    return (
       <MessageDialog
         image={theme.images?.emptyAssets}
         title={NO_ASSETS_MODAL.title}
@@ -88,8 +88,7 @@ const AssetSelectionScreen: React.FC<AssetSelectionScreenProps> = ({navigation})
       <FlatList
         showsVerticalScrollIndicator={false}
         data={types[selectedType]}
-        renderItem={({ item }) => <AssetItemCard assetItem={item} subscribedIconClick={forceUpdate}  onClick={() => navigation.navigate(Routes.AssetDetail, {id: item?.id})}  />}
-        ListEmptyComponent={renderNoAssets}
+        renderItem={({ item }) => <AssetItemCard assetItem={item} subscribedIconClick={forceUpdate} onClick={() => navigation.navigate(Routes.AssetDetail, { id: item?.id })} />}
         style={styles.itemList}
         contentContainerStyle={styles.itemListContainer}
         keyExtractor={item => item?.id}
@@ -111,6 +110,7 @@ const AssetSelectionScreen: React.FC<AssetSelectionScreenProps> = ({navigation})
             <FlatList
               ref={flatListRef}
               horizontal
+              ListEmptyComponent={renderNoAssets}
               showsHorizontalScrollIndicator={false}
               data={Object.keys(types).reverse()}
               keyExtractor={(item) => item}
