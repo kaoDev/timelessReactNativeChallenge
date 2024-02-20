@@ -1,5 +1,5 @@
 import {useQuery} from 'urql';
-import {graphql} from './graphql/index';
+import {graphql} from './index';
 
 export function useAssetsList() {
   return useQuery({
