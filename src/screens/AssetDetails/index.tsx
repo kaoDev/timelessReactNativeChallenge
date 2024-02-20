@@ -7,7 +7,6 @@ import {
   StyleSheet,
   TouchableOpacity,
   Image,
-  ActivityIndicator,
   Dimensions,
 } from 'react-native';
 import {useAsset} from '../../graphql/queries.ts';
@@ -16,6 +15,9 @@ import backArrow from '../../assets/icons/back-arrow.png';
 import NotificationBadge from '../../components/NotificationBadge';
 import spacing from '../../theme/spacing.ts';
 import colors from '../../theme/colors.ts';
+import Loading from '../../components/Loading';
+import Error from '../../components/Error';
+import CompoundAnnualGrowthRate from '../../components/CompoundAnnualGrowthRate';
 
 interface AssetDetailScreenProps {
   id: string;
@@ -34,18 +36,10 @@ const AssetDetailScreen: React.FC<AssetDetailScreenProps> = ({
   }, [id, data?.asset?.id]);
 
   if (fetching) {
-    return (
-      <View style={styles.center}>
-        <ActivityIndicator size="large" color={'blue'} />
-      </View>
-    );
+    return <Loading />;
   }
   if (error) {
-    return (
-      <View style={styles.center}>
-        <Text>Something went wrong! Please try later.</Text>
-      </View>
-    );
+    return <Error />;
   }
 
   return (
@@ -72,32 +66,7 @@ const AssetDetailScreen: React.FC<AssetDetailScreenProps> = ({
             <Text style={styles.title}>{data?.asset?.make}</Text>
             <Text style={styles.subTitle}>{data?.asset?.label}</Text>
           </View>
-          <View style={styles.row}>
-            <Text style={styles.title}>CAGR</Text>
-            <Text style={styles.metaValue}>{data?.asset?.annualReturn}</Text>
-          </View>
-          <View style={styles.row}>
-            <Text style={styles.metaLabel}>Drop Date:</Text>
-            <Text style={styles.metaValue}>{data?.asset?.dropDate}</Text>
-          </View>
-          <View style={styles.row}>
-            <Text style={styles.metaLabel}>Drop Price:</Text>
-            <Text style={styles.metaValue}>{data?.asset?.actualPrice}</Text>
-          </View>
-          <View style={styles.row}>
-            <Text style={styles.metaLabel}>Drop Mkt. Value</Text>
-            <Text style={styles.metaValue}>{data?.asset?.price}</Text>
-          </View>
-          <View style={styles.row}>
-            <Text style={styles.metaLabel}>Fraction Price</Text>
-            <Text style={styles.metaValue}>{data?.asset?.pricePerShare}</Text>
-          </View>
-          <View style={styles.row}>
-            <Text style={styles.metaLabel}>Expected Holding Period</Text>
-            <Text style={styles.metaValue}>
-              {data?.asset.expectedHoldingPeriodRange} Years
-            </Text>
-          </View>
+          <CompoundAnnualGrowthRate asset={data?.asset} />
           <InvestmentsHighlights data={data?.asset?.investmentHighlights} />
         </View>
       </ScrollView>
@@ -106,11 +75,6 @@ const AssetDetailScreen: React.FC<AssetDetailScreenProps> = ({
 };
 
 const styles = StyleSheet.create({
-  center: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   button: {
     position: 'absolute',
     top: spacing.s,
@@ -151,17 +115,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 18,
     paddingBottom: 24,
-  },
-  row: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  metaLabel: {
-    fontWeight: '300',
-  },
-  metaValue: {
-    fontWeight: '300',
   },
 });
 

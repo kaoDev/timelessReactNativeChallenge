@@ -12,6 +12,9 @@ import {useAssetsList} from '../../graphql/queries.ts';
 import AssetDetailScreen from '../AssetDetails';
 import NotificationBadge from '../../components/NotificationBadge';
 import spacing from '../../theme/spacing.ts';
+import ListingFooter from '../../components/ListingFooter';
+import Error from '../../components/Error';
+import Loading from '../../components/Loading';
 
 const AssetCard: React.FC<{asset: any; onSelect: (id: string) => void}> = ({
   asset,
@@ -33,19 +36,7 @@ const AssetCard: React.FC<{asset: any; onSelect: (id: string) => void}> = ({
             source={{uri: asset?.heroImage}}
           />
         </View>
-        <View style={[styles.container, {backgroundColor: asset.heroColour}]}>
-          <Text style={styles.label}>{asset.label}</Text>
-          <View style={styles.priceContainer}>
-            <View>
-              <Text style={styles.priceLabel}>Drop Price</Text>
-              <Text style={styles.price}>{asset.actualPrice} €</Text>
-            </View>
-            <View style={styles.alignEnd}>
-              <Text style={styles.priceLabel}>Drop Market Value</Text>
-              <Text style={styles.price}>{asset.price} €</Text>
-            </View>
-          </View>
-        </View>
+        <ListingFooter asset={asset} />
       </View>
     </TouchableOpacity>
   );
@@ -60,18 +51,10 @@ const AssetsListingScreen = () => {
   };
 
   if (fetching) {
-    return (
-      <View style={styles.center}>
-        <ActivityIndicator size="large" color={'blue'} />
-      </View>
-    );
+    return <Loading />;
   }
   if (error) {
-    return (
-      <View style={styles.center}>
-        <Text>Something went wrong! Please try later.</Text>
-      </View>
-    );
+    return <Error />;
   }
 
   return (
@@ -97,14 +80,6 @@ const AssetsListingScreen = () => {
 };
 
 const styles = StyleSheet.create({
-  center: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  container: {
-    padding: spacing.s,
-  },
   card: {
     borderRadius: spacing.xs,
     marginBottom: spacing.xs,
@@ -113,26 +88,6 @@ const styles = StyleSheet.create({
   image: {
     width: '100%',
     height: 200,
-  },
-  priceLabel: {
-    fontWeight: '300',
-    fontSize: 14,
-  },
-  label: {
-    fontWeight: 'bold',
-    fontSize: 14,
-    paddingVertical: spacing.xs,
-  },
-  priceContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  price: {
-    fontWeight: '500',
-    fontSize: 14,
-  },
-  alignEnd: {
-    alignItems: 'flex-end',
   },
   notification: {
     right: spacing.xs,
