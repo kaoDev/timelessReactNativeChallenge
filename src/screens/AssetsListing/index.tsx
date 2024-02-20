@@ -10,15 +10,22 @@ import {
 } from 'react-native';
 import {useAssetsList} from '../../graphql/queries.ts';
 import AssetDetailScreen from '../AssetDetails';
+import NotificationBadge from '../../components/NotificationBadge';
 
 const AssetCard: React.FC<{asset: any; onSelect: (id: string) => void}> = ({
   asset,
   onSelect,
 }) => {
+  const onPress = () => {
+    onSelect(asset.id);
+  };
   return (
-    <TouchableOpacity onPress={() => onSelect(asset.id)}>
+    <TouchableOpacity onPress={onPress}>
       <View style={styles.card}>
         <View style={!!asset.heroColour && {backgroundColor: asset.heroColour}}>
+          <View style={styles.notification}>
+            <NotificationBadge id={asset.id} />
+          </View>
           <Image
             resizeMode={'contain'}
             style={styles.image}
@@ -124,6 +131,12 @@ const styles = StyleSheet.create({
   },
   alignEnd: {
     alignItems: 'flex-end',
+  },
+  notification: {
+    right: 8,
+    position: 'absolute',
+    top: 16,
+    zIndex: 1,
   },
 });
 

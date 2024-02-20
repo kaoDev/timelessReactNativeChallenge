@@ -48,13 +48,13 @@ const AssetDetailScreen: React.FC<AssetDetailScreenProps> = ({
 
   return (
     <SafeAreaView>
-      <TouchableOpacity onPress={onBack} style={[styles.button, styles.back]}>
-        <Image source={backArrow} style={styles.image} />
-      </TouchableOpacity>
-      <View style={[styles.button, styles.notification]}>
-        <NotificationBadge />
-      </View>
       <ScrollView>
+        <TouchableOpacity onPress={onBack} style={[styles.button, styles.back]}>
+          <Image source={backArrow} style={styles.image} />
+        </TouchableOpacity>
+        <View style={[styles.button, styles.notification]}>
+          <NotificationBadge id={data?.asset?.id} />
+        </View>
         <ScrollView horizontal showsHorizontalScrollIndicator>
           {data?.asset?.gallery?.map(i => (
             <Image

@@ -2,14 +2,25 @@ import React from 'react';
 import {View, StyleSheet, TouchableOpacity, Image} from 'react-native';
 import bell from '../../assets/icons/bell.png';
 import bellFilled from '../../assets/icons/bell_filled.png';
+import {useNotificationSettings} from '../../contexts/NotificationSettingsContext';
 
-const NotificationBadge = () => {
-  const [hasNotification, setSasNotification] = React.useState(false);
+const NotificationBadge = ({id}: {id: string}) => {
+  const {notificationIds, addNotificationId, removeNotificationId} =
+    useNotificationSettings();
+
+  const onPress = () => {
+    if (!notificationIds.has(id)) {
+      addNotificationId(id);
+    } else {
+      removeNotificationId(id);
+    }
+  };
+
   return (
-    <TouchableOpacity onPress={() => setSasNotification(!hasNotification)}>
+    <TouchableOpacity onPress={onPress}>
       <View style={[styles.container]}>
         <Image
-          source={hasNotification ? bell : bellFilled}
+          source={notificationIds.has(id) ? bellFilled : bell}
           style={styles.image}
         />
       </View>
