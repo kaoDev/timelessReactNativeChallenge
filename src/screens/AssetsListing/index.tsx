@@ -11,6 +11,7 @@ import {
 import {useAssetsList} from '../../graphql/queries.ts';
 import AssetDetailScreen from '../AssetDetails';
 import NotificationBadge from '../../components/NotificationBadge';
+import spacing from '../../theme/spacing.ts';
 
 const AssetCard: React.FC<{asset: any; onSelect: (id: string) => void}> = ({
   asset,
@@ -82,7 +83,7 @@ const AssetsListingScreen = () => {
         />
       ) : (
         <FlatList
-          contentContainerStyle={{padding: 8}}
+          contentContainerStyle={{padding: spacing.xs}}
           showsVerticalScrollIndicator={false}
           data={data?.assets?.edges?.map(edge => edge.node)}
           keyExtractor={item => item.id}
@@ -102,11 +103,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   container: {
-    padding: 16,
+    padding: spacing.s,
   },
   card: {
-    borderRadius: 8,
-    marginBottom: 8,
+    borderRadius: spacing.xs,
+    marginBottom: spacing.xs,
+    overflow: 'hidden',
   },
   image: {
     width: '100%',
@@ -119,7 +121,7 @@ const styles = StyleSheet.create({
   label: {
     fontWeight: 'bold',
     fontSize: 14,
-    paddingVertical: 8,
+    paddingVertical: spacing.xs,
   },
   priceContainer: {
     flexDirection: 'row',
@@ -133,9 +135,9 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
   },
   notification: {
-    right: 8,
+    right: spacing.xs,
     position: 'absolute',
-    top: 16,
+    top: spacing.s,
     zIndex: 1,
   },
 });

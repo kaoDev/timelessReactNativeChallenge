@@ -3,6 +3,8 @@ import {View, StyleSheet, TouchableOpacity, Image} from 'react-native';
 import bell from '../../assets/icons/bell.png';
 import bellFilled from '../../assets/icons/bell_filled.png';
 import {useNotificationSettings} from '../../contexts/NotificationSettingsContext';
+import spacing from '../../theme/spacing.ts';
+import colors from '../../theme/colors.ts';
 
 const NotificationBadge = ({id}: {id: string}) => {
   const {notificationIds, addNotificationId, removeNotificationId} =
@@ -30,9 +32,9 @@ const NotificationBadge = ({id}: {id: string}) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
-    borderRadius: 16,
-    paddingHorizontal: 16,
+    backgroundColor: colors.white,
+    borderRadius: spacing.s,
+    paddingHorizontal: spacing.s,
     height: 30,
     justifyContent: 'center',
   },

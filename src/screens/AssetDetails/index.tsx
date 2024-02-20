@@ -14,6 +14,8 @@ import {useAsset} from '../../graphql/queries.ts';
 import InvestmentsHighlights from '../../components/InvestmentsHighlights';
 import backArrow from '../../assets/icons/back-arrow.png';
 import NotificationBadge from '../../components/NotificationBadge';
+import spacing from '../../theme/spacing.ts';
+import colors from '../../theme/colors.ts';
 
 interface AssetDetailScreenProps {
   id: string;
@@ -111,38 +113,38 @@ const styles = StyleSheet.create({
   },
   button: {
     position: 'absolute',
-    top: 16,
+    top: spacing.s,
     zIndex: 1,
   },
   back: {
-    left: 16,
+    left: spacing.s,
   },
   notification: {
-    right: 16,
+    right: spacing.s,
   },
   image: {
     width: 24,
     height: 24,
   },
   container: {
-    padding: 16,
-    borderTopRightRadius: 16,
-    borderTopLeftRadius: 16,
-    backgroundColor: 'white',
-    shadowColor: 'black',
+    padding: spacing.s,
+    borderTopRightRadius: spacing.s,
+    borderTopLeftRadius: spacing.s,
+    backgroundColor: colors.white,
+    shadowColor: colors.black,
     shadowOffset: {
       width: 0,
-      height: 4,
+      height: spacing.base,
     },
     shadowOpacity: 0.6,
-    shadowRadius: 4.65,
+    shadowRadius: spacing.base,
     elevation: 8,
   },
   title: {
     fontWeight: '700',
     fontSize: 20,
     lineHeight: 20,
-    paddingVertical: 8,
+    paddingVertical: spacing.xs,
   },
   subTitle: {
     fontWeight: '300',

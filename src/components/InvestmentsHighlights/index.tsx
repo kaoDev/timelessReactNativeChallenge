@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import colors from '../../theme/colors.ts';
+import spacing from '../../theme/spacing.ts';
 
 const InvestmentsHighlights: React.FC<any> = ({data}) => {
   if (!Array.isArray(data) || data?.length < 1) {
@@ -32,9 +33,9 @@ const styles = StyleSheet.create({
   row: {
     borderColor: colors.primary400,
     borderWidth: 0.5,
-    borderRadius: 8,
-    padding: 16,
-    marginBottom: 8,
+    borderRadius: spacing.xs,
+    padding: spacing.s,
+    marginBottom: spacing.xs,
     flexDirection: 'row',
   },
   title: {
@@ -42,7 +43,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     lineHeight: 20,
     color: colors.primary900,
-    paddingVertical: 8,
+    paddingVertical: spacing.xs,
   },
   text: {
     flex: 1,
@@ -50,15 +51,15 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 18,
     color: colors.primary900,
-    paddingVertical: 8,
+    paddingVertical: spacing.xs,
   },
   number: {
     fontWeight: '700',
     fontSize: 24,
     lineHeight: 24,
     color: colors.tlBlue200,
-    paddingVertical: 8,
-    paddingRight: 16,
+    paddingVertical: spacing.xs,
+    paddingRight: spacing.s,
   },
 });
 
