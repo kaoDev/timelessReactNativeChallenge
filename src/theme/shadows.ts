@@ -1,6 +1,6 @@
 import {Platform, StyleSheet, ViewStyle} from 'react-native';
-import colors from './colors';
-import type {Theme} from './createTimelessTheme';
+import colors from './colors.ts';
+import type {Theme} from './createTimelessTheme.ts';
 
 const shadowColor = Platform.select({
   android: colors.primary600,

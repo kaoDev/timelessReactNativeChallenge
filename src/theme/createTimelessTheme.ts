@@ -1,9 +1,9 @@
 import {createTheme, useTheme as useRestyleTheme} from '@shopify/restyle';
 import {Platform} from 'react-native';
-import colors from './colors';
-import {shadowVariants} from './shadows';
-import spacing from './spacing';
-import {TextVariant, textVariants} from './textVariants';
+import colors from './colors.ts';
+import {shadowVariants} from './shadows.ts';
+import spacing from './spacing.ts';
+import {TextVariant, textVariants} from './textVariants.ts';
 
 interface DynamicThemeProps {
   scaleFactor?: number;
