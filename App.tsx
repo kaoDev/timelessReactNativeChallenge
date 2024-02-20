@@ -1,13 +1,16 @@
 import React from 'react';
-import {SafeAreaView, Text, View} from 'react-native';
+import {SafeAreaView} from 'react-native';
+
+import {UrQlProvider} from './src/graphql/urql';
+import AssetsListingScreen from './src/screens/AssetsListing';
 
 function App(): React.JSX.Element {
   return (
-    <SafeAreaView>
-      <View>
-        <Text>CLEANED</Text>
-      </View>
-    </SafeAreaView>
+    <UrQlProvider>
+      <SafeAreaView style={{flex: 1}}>
+        <AssetsListingScreen />
+      </SafeAreaView>
+    </UrQlProvider>
   );
 }
 
