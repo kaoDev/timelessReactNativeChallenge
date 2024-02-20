@@ -9,16 +9,20 @@ import {
   ActivityIndicator,
 } from 'react-native';
 import {useAssetsList} from '../../graphql/queries.ts';
+import AssetDetailScreen from '../AssetDetails';
 
-const AssetCard: React.FC<{asset: any}> = ({asset}) => {
+const AssetCard: React.FC<{asset: any; onSelect: (id: string) => void}> = ({
+  asset,
+  onSelect,
+}) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={() => onSelect(asset.id)}>
       <View style={styles.card}>
         <View style={!!asset.heroColour && {backgroundColor: asset.heroColour}}>
           <Image
             resizeMode={'contain'}
             style={styles.image}
-            source={{uri: asset?.heroImage || undefined}}
+            source={{uri: asset?.heroImage}}
           />
         </View>
         <View style={[styles.container, {backgroundColor: asset.heroColour}]}>
@@ -40,7 +44,12 @@ const AssetCard: React.FC<{asset: any}> = ({asset}) => {
 };
 
 const AssetsListingScreen = () => {
+  const [selectedAsset, setSelectedAsset] = React.useState<string | null>(null);
   const [{data, fetching, error}] = useAssetsList();
+
+  const handleSelectAsset = (id: string) => {
+    setSelectedAsset(id);
+  };
 
   if (fetching) {
     return (
@@ -58,13 +67,24 @@ const AssetsListingScreen = () => {
   }
 
   return (
-    <FlatList
-      contentContainerStyle={{padding: 8}}
-      showsVerticalScrollIndicator={false}
-      data={data?.assets?.edges?.map(edge => edge.node)}
-      keyExtractor={item => item.id}
-      renderItem={({item}) => <AssetCard asset={item} />}
-    />
+    <>
+      {selectedAsset ? (
+        <AssetDetailScreen
+          id={selectedAsset}
+          onBack={() => setSelectedAsset(null)}
+        />
+      ) : (
+        <FlatList
+          contentContainerStyle={{padding: 8}}
+          showsVerticalScrollIndicator={false}
+          data={data?.assets?.edges?.map(edge => edge.node)}
+          keyExtractor={item => item.id}
+          renderItem={({item}) => (
+            <AssetCard asset={item} onSelect={handleSelectAsset} />
+          )}
+        />
+      )}
+    </>
   );
 };
 
