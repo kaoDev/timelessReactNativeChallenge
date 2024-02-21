@@ -5,8 +5,6 @@ import {
   Image,
   StyleSheet,
   TouchableOpacity,
-  Text,
-  ActivityIndicator,
 } from 'react-native';
 import {useAssetsList} from '../../graphql/queries.ts';
 import AssetDetailScreen from '../AssetDetails';

@@ -18,6 +18,8 @@ import colors from '../../theme/colors.ts';
 import Loading from '../../components/Loading';
 import Error from '../../components/Error';
 import CompoundAnnualGrowthRate from '../../components/CompoundAnnualGrowthRate';
+import {CAGRType, getCAGRData} from '../../utilities';
+import Divider from '../../components/Divider';
 
 interface AssetDetailScreenProps {
   id: string;
@@ -27,12 +29,16 @@ const AssetDetailScreen: React.FC<AssetDetailScreenProps> = ({
   id = '',
   onBack = () => null,
 }) => {
+  const [cagrData, setCagrData] = React.useState<CAGRType | undefined>(
+    undefined,
+  );
   const [{data, fetching, error}] = useAsset(id);
-  //
+
   React.useEffect(() => {
     if (!data?.asset?.id) {
       return;
     }
+    setCagrData(getCAGRData(data.asset));
   }, [id, data?.asset?.id]);
 
   if (fetching) {
@@ -49,7 +55,7 @@ const AssetDetailScreen: React.FC<AssetDetailScreenProps> = ({
           <Image source={backArrow} style={styles.image} />
         </TouchableOpacity>
         <View style={[styles.button, styles.notification]}>
-          <NotificationBadge id={data?.asset?.id} />
+          <NotificationBadge id={id} />
         </View>
         <ScrollView horizontal showsHorizontalScrollIndicator>
           {data?.asset?.gallery?.map(i => (
@@ -66,7 +72,8 @@ const AssetDetailScreen: React.FC<AssetDetailScreenProps> = ({
             <Text style={styles.title}>{data?.asset?.make}</Text>
             <Text style={styles.subTitle}>{data?.asset?.label}</Text>
           </View>
-          <CompoundAnnualGrowthRate asset={data?.asset} />
+          <CompoundAnnualGrowthRate data={cagrData} />
+          <Divider size={4} padding={spacing.s} />
           <InvestmentsHighlights data={data?.asset?.investmentHighlights} />
         </View>
       </ScrollView>
