@@ -1,0 +1,242 @@
+{
+  "assets": {
+    "edges": [
+      {
+        "node": {
+          "id": "FirstAssetId",
+          "label": "FirstAssetLabel",
+          "heroColour": "#ffeddf",
+          "heroImage": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/hero-image-1706118778.png",
+          "type": "watch",
+          "dropDate": "2024-02-16",
+          "actualPrice": 4450000,
+          "averageMarketPrice": 5387,
+          "make": "Audemars Piguet",
+          "model": "Star Wheel Ref. 25720OR",
+          "exitPrice": 0,
+          "exitDate": null,
+          "collectorsClubType": "basic",
+          "status": "open",
+          "countLikes": 0,
+          "price": 4795000,
+          "pricePerShare": 5000,
+          "__typename": "Asset"
+        },
+        "__typename": "AssetEdge"
+      },
+      {
+        "node": {
+          "id": "SecondAssetId",
+          "label": "Rolex Datejust Ref. 1600/8 Red Jasper",
+          "heroColour": "#ffe8e8",
+          "heroImage": "https://documents.timeless.investments/assets/6bc39083-b069-47b8-8d8c-be8456cc9bb2/hero-image-1707393401.png",
+          "type": "watch",
+          "dropDate": "2024-02-15",
+          "actualPrice": 9750000,
+          "averageMarketPrice": 5384,
+          "make": "Rolex Datejust",
+          "model": "Ref. 1600/8 \"Red Jasper\"",
+          "exitPrice": 0,
+          "exitDate": null,
+          "collectorsClubType": "basic",
+          "status": "open",
+          "countLikes": 0,
+          "price": 10500000,
+          "pricePerShare": 5000,
+          "__typename": "Asset"
+        },
+        "__typename": "AssetEdge"
+      },
+      {
+        "node": {
+          "id": "ThirdAssetId",
+          "label": "Bowmore 1964 Trilogy",
+          "heroColour": "#fff7ed",
+          "heroImage": "https://documents.timeless.investments/assets/7be68c45-8833-4bed-802c-7459fc7f3452/hero-image-1706863118.png",
+          "type": "wine_and_whisky",
+          "dropDate": "2024-02-08",
+          "actualPrice": 6950000,
+          "averageMarketPrice": 5446,
+          "make": "Bowmore",
+          "model": "Trilogy (Black, White & Gold) - 1964",
+          "exitPrice": 0,
+          "exitDate": null,
+          "collectorsClubType": "basic",
+          "status": "open",
+          "countLikes": 0,
+          "price": 7570000,
+          "pricePerShare": 5000,
+          "__typename": "Asset"
+        },
+        "__typename": "AssetEdge"
+      },
+      {
+        "node": {
+          "id": "87a9456b-c862-41e2-9f98-85a342d8449f",
+          "label": "Keith Haring - Untitled, 1985",
+          "heroColour": "#fbffe0",
+          "heroImage": "https://documents.timeless.investments/assets/87a9456b-c862-41e2-9f98-85a342d8449f/hero-image-1706612183.png",
+          "type": "art",
+          "dropDate": "2024-02-08",
+          "actualPrice": 6500000,
+          "averageMarketPrice": 5769,
+          "make": "Keith Haring",
+          "model": "Untitled, 1985",
+          "exitPrice": 0,
+          "exitDate": null,
+          "collectorsClubType": "basic",
+          "status": "open",
+          "countLikes": 0,
+          "price": 7500000,
+          "pricePerShare": 5000,
+          "__typename": "Asset"
+        },
+        "__typename": "AssetEdge"
+      },
+      {
+        "node": {
+          "id": "f040c616-be2b-4b75-908a-1318bb440f0c",
+          "label": "Rolex Daytona Ref. 116506",
+          "heroColour": "#e6eff2",
+          "heroImage": "https://documents.timeless.investments/assets/f040c616-be2b-4b75-908a-1318bb440f0c/hero-image-1704458999.png",
+          "type": "watch",
+          "dropDate": "2024-01-30",
+          "actualPrice": 9995000,
+          "averageMarketPrice": 5542,
+          "make": "Rolex",
+          "model": "Daytona Ref. 116506 Platinum  - Baguette Dial",
+          "exitPrice": 0,
+          "exitDate": null,
+          "collectorsClubType": "basic",
+          "status": "open",
+          "countLikes": 566,
+          "price": 11080000,
+          "pricePerShare": 5000,
+          "__typename": "Asset"
+        },
+        "__typename": "AssetEdge"
+      },
+      {
+        "node": {
+          "id": "d8ff188d-3c21-450f-a7d0-c85d3a8a6135",
+          "label": "Karuizawa Dekanta",
+          "heroColour": "#e6f1ff",
+          "heroImage": "https://documents.timeless.investments/assets/d8ff188d-3c21-450f-a7d0-c85d3a8a6135/hero-image-1704896967.png",
+          "type": "wine_and_whisky",
+          "dropDate": "2024-01-14",
+          "actualPrice": 7260000,
+          "averageMarketPrice": 5502,
+          "make": "Karuizawa",
+          "model": "Cities of Japan - 35 Year Old (Full Set)",
+          "exitPrice": 0,
+          "exitDate": null,
+          "collectorsClubType": "basic",
+          "status": "open",
+          "countLikes": 293,
+          "price": 7990000,
+          "pricePerShare": 5000,
+          "__typename": "Asset"
+        },
+        "__typename": "AssetEdge"
+      },
+      {
+        "node": {
+          "id": "f505f33c-5b71-41f0-a6ad-1140fd07eb3a",
+          "label": "Porsche 911 Carrera 4S",
+          "heroColour": "#e6f4ff",
+          "heroImage": "https://documents.timeless.investments/assets/f505f33c-5b71-41f0-a6ad-1140fd07eb3a/hero-image-1704371209.png",
+          "type": "car",
+          "dropDate": "2024-01-11",
+          "actualPrice": 6695000,
+          "averageMarketPrice": 5227,
+          "make": "Porsche",
+          "model": "911 Carrera 4S Cabrio (996)",
+          "exitPrice": 0,
+          "exitDate": null,
+          "collectorsClubType": "basic",
+          "status": "open",
+          "countLikes": 341,
+          "price": 7000000,
+          "pricePerShare": 5000,
+          "__typename": "Asset"
+        },
+        "__typename": "AssetEdge"
+      },
+      {
+        "node": {
+          "id": "3525dd42-f4a4-4815-9692-73ed648471ee",
+          "label": "Richard Mille RM005",
+          "heroColour": "#ebf9ff",
+          "heroImage": "https://documents.timeless.investments/assets/3525dd42-f4a4-4815-9692-73ed648471ee/hero-image-1702577422.png",
+          "type": "watch",
+          "dropDate": "2024-01-02",
+          "actualPrice": 10995000,
+          "averageMarketPrice": 5952,
+          "make": "Richard Mille",
+          "model": "RM005",
+          "exitPrice": 0,
+          "exitDate": null,
+          "collectorsClubType": "basic",
+          "status": "open",
+          "countLikes": 306,
+          "price": 11900000,
+          "pricePerShare": 5000,
+          "__typename": "Asset"
+        },
+        "__typename": "AssetEdge"
+      },
+      {
+        "node": {
+          "id": "96008de3-6d96-41c6-8b26-611ec95847e9",
+          "label": "The Macallan -  74 Year Old",
+          "heroColour": "#fee7eb",
+          "heroImage": "https://documents.timeless.investments/assets/96008de3-6d96-41c6-8b26-611ec95847e9/hero-image-1702459442.png",
+          "type": "wine_and_whisky",
+          "dropDate": "2023-12-26",
+          "actualPrice": 8600000,
+          "averageMarketPrice": 5523,
+          "make": "The Macallan",
+          "model": "The Red Collection - 74 Year Old",
+          "exitPrice": 0,
+          "exitDate": null,
+          "collectorsClubType": "basic",
+          "status": "open",
+          "countLikes": 184,
+          "price": 9500000,
+          "pricePerShare": 5000,
+          "__typename": "Asset"
+        },
+        "__typename": "AssetEdge"
+      },
+      {
+        "node": {
+          "id": "81e86909-9ede-47e2-b78e-deff9e6d197d",
+          "label": "Rolex Daytona Ref. 16528 Pave Emerald",
+          "heroColour": "#e7fbe8",
+          "heroImage": "https://documents.timeless.investments/assets/81e86909-9ede-47e2-b78e-deff9e6d197d/hero-image-1705583648.png",
+          "type": "watch",
+          "dropDate": "2024-04-07",
+          "actualPrice": 12500000,
+          "averageMarketPrice": 7003,
+          "make": "Rolex",
+          "model": "Daytona Ref. 16528 Pave Emerald Dial",
+          "exitPrice": 0,
+          "exitDate": null,
+          "collectorsClubType": "basic",
+          "status": "coming_soon",
+          "countLikes": 0,
+          "price": 14000000,
+          "pricePerShare": 5000,
+          "__typename": "Asset"
+        },
+        "__typename": "AssetEdge"
+      }
+    ],
+    "pageInfo": {
+      "endCursor": "Y3Vyc29yOjEw",
+      "hasNextPage": true,
+      "__typename": "PageInfoD"
+    },
+    "__typename": "PaginatedAssets"
+  }
+}

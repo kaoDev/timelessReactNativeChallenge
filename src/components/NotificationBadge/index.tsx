@@ -19,7 +19,7 @@ const NotificationBadge = ({id}: {id: string}) => {
   };
 
   return (
-    <TouchableOpacity onPress={onPress}>
+    <TouchableOpacity onPress={onPress} testID={`notificationBadge-${id}`}>
       <View style={[styles.container]}>
         <Image
           source={notificationIds.has(id) ? bellFilled : bell}

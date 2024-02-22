@@ -4,7 +4,7 @@ import {StyleSheet, Text, View} from 'react-native';
 const Error: React.FC = () => {
   return (
     <View style={styles.center}>
-      <Text>Something went wrong! Please try later.</Text>
+      <Text testID="errorMessage">Something went wrong! Please try later.</Text>
     </View>
   );
 };

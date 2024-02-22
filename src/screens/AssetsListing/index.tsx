@@ -22,7 +22,7 @@ const AssetCard: React.FC<{asset: any; onSelect: (id: string) => void}> = ({
     onSelect(asset.id);
   };
   return (
-    <TouchableOpacity onPress={onPress}>
+    <TouchableOpacity onPress={onPress} testID={`assetCard-${asset.id}`}>
       <View style={styles.card}>
         <View style={!!asset.heroColour && {backgroundColor: asset.heroColour}}>
           <View style={styles.notification}>

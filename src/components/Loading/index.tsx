@@ -4,7 +4,11 @@ import {ActivityIndicator, StyleSheet, View} from 'react-native';
 const Loading: React.FC = () => {
   return (
     <View style={styles.center}>
-      <ActivityIndicator size="large" color={'blue'} />
+      <ActivityIndicator
+        testID="loadingIndicator"
+        size="large"
+        color={'blue'}
+      />
     </View>
   );
 };
