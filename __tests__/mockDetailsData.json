@@ -1,0 +1,139 @@
+{
+  "asset": {
+    "id": "DetailScreenMockedID",
+    "label": "DetailScreenMockedLabel",
+    "heroColour": "#ffeddf",
+    "heroImage": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/hero-image-1706118778.png",
+    "type": "watch",
+    "dropDate": "2024-02-16",
+    "images": {
+      "medium": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/medium-1706118778.png",
+      "__typename": "AssetImageSet"
+    },
+    "actualPrice": 4450000,
+    "price": 4795000,
+    "averageMarketPrice": 5387,
+    "pricePerShare": 5000,
+    "make": "DetailScreenMockedMake",
+    "model": "DetailScreenMockedModel",
+    "exitPrice": 0,
+    "exitDate": null,
+    "collectorsClubType": "basic",
+    "totalShares": 890,
+    "percentageTokenized": null,
+    "creator": "Audemars Piguet",
+    "maxSharesPerTransaction": 180,
+    "minSharesPerTransaction": 1,
+    "feePercentage": 3,
+    "exclusivity": "sehr selten",
+    "condition": "gut",
+    "annualReturn": 12.91,
+    "originalSellingPrice": 3352030,
+    "timePeriod": 2,
+    "timePeriodMonths": 27,
+    "isHidden": false,
+    "gallery": [
+      {
+        "id": "e72d07d8-880c-4a5a-a297-ea4bec2c63af",
+        "url": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/e72d07d8-880c-4a5a-a297-ea4bec2c63af-1706.jpeg",
+        "mediumUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/medium-e72d07d8-880c-4a5a-a297-ea4bec2c63af-1706.jpeg",
+        "thumbnailUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/thumbnail-e72d07d8-880c-4a5a-a297-ea4bec2c63af-1706.jpeg",
+        "placeholderUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/placeholder-e72d07d8-880c-4a5a-a297-ea4bec2c63af-1706.jpeg",
+        "type": "image",
+        "__typename": "AssetImageDocument"
+      },
+      {
+        "id": "b898a5ec-b54b-46cd-beb1-72c11497acf9",
+        "url": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/b898a5ec-b54b-46cd-beb1-72c11497acf9-1706.jpeg",
+        "mediumUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/medium-b898a5ec-b54b-46cd-beb1-72c11497acf9-1706.jpeg",
+        "thumbnailUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/thumbnail-b898a5ec-b54b-46cd-beb1-72c11497acf9-1706.jpeg",
+        "placeholderUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/placeholder-b898a5ec-b54b-46cd-beb1-72c11497acf9-1706.jpeg",
+        "type": "image",
+        "__typename": "AssetImageDocument"
+      },
+      {
+        "id": "d7934a0c-8446-4584-a218-4327fd0b1f28",
+        "url": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/d7934a0c-8446-4584-a218-4327fd0b1f28-1706.jpeg",
+        "mediumUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/medium-d7934a0c-8446-4584-a218-4327fd0b1f28-1706.jpeg",
+        "thumbnailUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/thumbnail-d7934a0c-8446-4584-a218-4327fd0b1f28-1706.jpeg",
+        "placeholderUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/placeholder-d7934a0c-8446-4584-a218-4327fd0b1f28-1706.jpeg",
+        "type": "image",
+        "__typename": "AssetImageDocument"
+      },
+      {
+        "id": "6e4883d7-bd75-4bde-9cfe-5b1d5ad54fc1",
+        "url": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/6e4883d7-bd75-4bde-9cfe-5b1d5ad54fc1-1706.jpeg",
+        "mediumUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/medium-6e4883d7-bd75-4bde-9cfe-5b1d5ad54fc1-1706.jpeg",
+        "thumbnailUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/thumbnail-6e4883d7-bd75-4bde-9cfe-5b1d5ad54fc1-1706.jpeg",
+        "placeholderUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/placeholder-6e4883d7-bd75-4bde-9cfe-5b1d5ad54fc1-1706.jpeg",
+        "type": "image",
+        "__typename": "AssetImageDocument"
+      },
+      {
+        "id": "e09fe38d-d99e-4ba3-aa36-61ce1245cc45",
+        "url": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/e09fe38d-d99e-4ba3-aa36-61ce1245cc45-1706.jpeg",
+        "mediumUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/medium-e09fe38d-d99e-4ba3-aa36-61ce1245cc45-1706.jpeg",
+        "thumbnailUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/thumbnail-e09fe38d-d99e-4ba3-aa36-61ce1245cc45-1706.jpeg",
+        "placeholderUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/placeholder-e09fe38d-d99e-4ba3-aa36-61ce1245cc45-1706.jpeg",
+        "type": "image",
+        "__typename": "AssetImageDocument"
+      },
+      {
+        "id": "430a31af-a217-4588-8b73-83a183fecceb",
+        "url": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/430a31af-a217-4588-8b73-83a183fecceb-1706.jpeg",
+        "mediumUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/medium-430a31af-a217-4588-8b73-83a183fecceb-1706.jpeg",
+        "thumbnailUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/thumbnail-430a31af-a217-4588-8b73-83a183fecceb-1706.jpeg",
+        "placeholderUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/placeholder-430a31af-a217-4588-8b73-83a183fecceb-1706.jpeg",
+        "type": "image",
+        "__typename": "AssetImageDocument"
+      },
+      {
+        "id": "8d50eca7-947a-4e2e-8b7c-27b21e75d94f",
+        "url": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/8d50eca7-947a-4e2e-8b7c-27b21e75d94f-1706.jpeg",
+        "mediumUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/medium-8d50eca7-947a-4e2e-8b7c-27b21e75d94f-1706.jpeg",
+        "thumbnailUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/thumbnail-8d50eca7-947a-4e2e-8b7c-27b21e75d94f-1706.jpeg",
+        "placeholderUrl": "https://documents.timeless.investments/assets/b76cb492-b58e-4fe3-913e-69d0c8b9baa4/documents/placeholder-8d50eca7-947a-4e2e-8b7c-27b21e75d94f-1706.jpeg",
+        "type": "image",
+        "__typename": "AssetImageDocument"
+      }
+    ],
+    "tradingStats": {
+      "tradesCount": null,
+      "minPrice": null,
+      "maxPrice": null,
+      "investSum": null,
+      "__typename": "TradingStatsData"
+    },
+    "priceDevelopmentData": [],
+    "basePriceDate": "2021-11-16T00:00:00.000+00:00",
+    "expectedHoldingPeriodRange": "2 - 5",
+    "investmentHighlights": [
+      {
+        "highlight": "The market value is 7,8% above the drop price.",
+        "__typename": "AssetInvestmentHighlight"
+      },
+      {
+        "highlight": "At a Sotheby's auction in 10/2021, a similar watch reached a price of around €33.5k, today the market price is already over €45k (CAGR of 13,42%).",
+        "__typename": "AssetInvestmentHighlight"
+      },
+      {
+        "highlight": "Audemars Piguet is one of the holy trinity of Swiss watchmaking and looks back on a long history.",
+        "__typename": "AssetInvestmentHighlight"
+      },
+      {
+        "highlight": "This particular version is one of the rarest as it features a hand-engraved floral pattern on the 18-carat rose gold dial.",
+        "__typename": "AssetInvestmentHighlight"
+      },
+      {
+        "highlight": "Vintage dream: the watch dates back to 1994 and has recently returned from a full service at AP.",
+        "__typename": "AssetInvestmentHighlight"
+      },
+      {
+        "highlight": "The watch comes on a red alligator leather AP strap with an AP Signature and is accompanied by an extract of the AP archives.",
+        "__typename": "AssetInvestmentHighlight"
+      }
+    ],
+    "__typename": "Asset"
+  }
+}
+

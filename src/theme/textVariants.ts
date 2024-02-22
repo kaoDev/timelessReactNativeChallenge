@@ -28,7 +28,7 @@ export const textVariants = {
     letterSpacing: 0,
     color: 'typography',
   },
-  // eslint-disable-next-line react-native/no-unused-styles
+
   h2: {
     fontFamily: fontFamilies.bold,
     fontWeight: '700',
@@ -37,7 +37,7 @@ export const textVariants = {
     letterSpacing: 0,
     color: 'typography',
   },
-  // eslint-disable-next-line react-native/no-unused-styles
+
   h3: {
     fontFamily: fontFamilies.bold,
     fontWeight: '700',
@@ -46,7 +46,7 @@ export const textVariants = {
     letterSpacing: 0,
     color: 'typography',
   },
-  // eslint-disable-next-line react-native/no-unused-styles
+
   h4: {
     fontFamily: fontFamilies.semiBold,
     fontWeight: '600',
@@ -55,7 +55,7 @@ export const textVariants = {
     letterSpacing: 0,
     color: 'typography',
   },
-  // eslint-disable-next-line react-native/no-unused-styles
+
   h5: {
     fontFamily: fontFamilies.semiBold,
     fontWeight: '600',
@@ -64,7 +64,7 @@ export const textVariants = {
     letterSpacing: 0,
     color: 'typography',
   },
-  // eslint-disable-next-line react-native/no-unused-styles
+
   h6: {
     fontFamily: fontFamilies.semiBold,
     fontWeight: '600',
@@ -73,7 +73,7 @@ export const textVariants = {
     letterSpacing: 0.5,
     color: 'typography',
   },
-  // eslint-disable-next-line react-native/no-unused-styles
+
   titleTopNav: {
     fontFamily: fontFamilies.semiBold,
     fontWeight: '600',
@@ -82,7 +82,7 @@ export const textVariants = {
     letterSpacing: 0.5,
     color: 'typography',
   },
-  // eslint-disable-next-line react-native/no-unused-styles
+
   titleMd: {
     fontFamily: fontFamilies.medium,
     fontWeight: '500',
@@ -91,7 +91,7 @@ export const textVariants = {
     letterSpacing: 0.5,
     color: 'typography',
   },
-  // eslint-disable-next-line react-native/no-unused-styles
+
   body: {
     fontFamily: fontFamilies.regular,
     fontWeight: '400',
@@ -100,7 +100,7 @@ export const textVariants = {
     letterSpacing: 0.5,
     color: 'typography',
   },
-  // eslint-disable-next-line react-native/no-unused-styles
+
   label: {
     fontFamily: fontFamilies.medium,
     fontWeight: '500',
@@ -110,7 +110,7 @@ export const textVariants = {
     textTransform: 'uppercase',
     color: 'typography',
   },
-  // eslint-disable-next-line react-native/no-unused-styles
+
   captions1: {
     fontFamily: fontFamilies.regular,
     fontWeight: '400',
@@ -119,7 +119,7 @@ export const textVariants = {
     letterSpacing: 0.6,
     color: 'typography',
   },
-  // eslint-disable-next-line react-native/no-unused-styles
+
   captions2: {
     fontFamily: fontFamilies.medium,
     fontWeight: '500',
@@ -128,7 +128,7 @@ export const textVariants = {
     letterSpacing: 0.3,
     color: 'typography',
   },
-  // eslint-disable-next-line react-native/no-unused-styles
+
   link: {
     fontFamily: fontFamilies.medium,
     fontWeight: '500',
@@ -137,7 +137,7 @@ export const textVariants = {
     letterSpacing: 1.5,
     color: 'typographyLinks',
   },
-  // eslint-disable-next-line react-native/no-unused-styles
+
   itemTitle: {
     fontFamily: fontFamilies.medium,
     fontWeight: '500',
