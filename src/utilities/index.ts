@@ -33,3 +33,25 @@ export const getCAGRData = (asset: any): CAGRType => {
     ],
   };
 };
+
+// Returns a darker version of the passed color based on amount, amount closer to 0 makes it darker
+export const getDarkerColor = (
+  hexColor: string,
+  amount: number = 0.9,
+): string => {
+  if (!/^#[0-9A-Fa-f]{6}$/.test(hexColor)) {
+    return hexColor;
+  }
+
+  const r = parseInt(hexColor.slice(1, 3), 16);
+  const g = parseInt(hexColor.slice(3, 5), 16);
+  const b = parseInt(hexColor.slice(5, 7), 16);
+
+  const rDark = Math.floor(r * amount);
+  const gDark = Math.floor(g * amount);
+  const bDark = Math.floor(b * amount);
+
+  return `#${rDark.toString(16).padStart(2, '0')}${gDark
+    .toString(16)
+    .padStart(2, '0')}${bDark.toString(16).padStart(2, '0')}`;
+};

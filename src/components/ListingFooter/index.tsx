@@ -1,10 +1,18 @@
 import React from 'react';
 import {View, StyleSheet, Text} from 'react-native';
 import spacing from '../../theme/spacing.ts';
+import {getDarkerColor} from '../../utilities';
+import colors from '../../theme/colors.ts';
 
 const ListingFooter: React.FC<{asset: any}> = ({asset}) => {
+  const darkerBackground = React.useMemo(() => {
+    if (asset.heroColour) {
+      return getDarkerColor(asset.heroColour);
+    }
+    return colors.primary500;
+  }, [asset.heroColour]);
   return (
-    <View style={[styles.container, {backgroundColor: asset.heroColour}]}>
+    <View style={[styles.container, {backgroundColor: darkerBackground}]}>
       <Text style={styles.label}>{asset.label}</Text>
       <View style={styles.priceContainer}>
         <View>
